@@ -9,7 +9,10 @@
 
 @section('content')
     <main class="container mx-auto py-8">
-        <h1 class="text-4xl font-bold mb-8">Welcome to My Site</h1>
+        <div class="w-full">
+            <iframe class="h-96 w-2/3" src="http://custompromotionsinc.com/flipbooks/LaboratoryMillWithPrices/"></iframe>
+        </div>
+        <h1 class="text-4xl font-bold mb-8">Welcome to {{ config('app.seo_name') }}</h1>
         <img src="https://images.unsplash.com/photo-1501712779049-23ec3228b569" alt="Bike image" class="w-full mb-8">
         <p class="mb-4">Looking for an adventure? Rent an e-bike and explore the beach! With plenty of bike trails and
             breathtaking scenery, it's the perfect way to enjoy the outdoors.</p>

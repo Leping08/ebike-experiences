@@ -4,7 +4,7 @@
             <div class="flex items-center">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <a href="{{ route('home') }}" class="text-white font-bold text-xl">My Site</a>
+                    <a href="{{ route('home') }}" class="text-white font-bold text-xl">{{ config('app.seo_name') }}</a>
                 </div>
                 <!-- Links -->
                 <div class="hidden md:block">
