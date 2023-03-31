@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('title', 'Contact Us')
+
+@section('description',
+    'Contact us for more information about electric bikes in Florida. Our site provides information and
+    resources.')
+
 @section('content')
     <div class="container mx-auto py-10">
         <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-5xl">

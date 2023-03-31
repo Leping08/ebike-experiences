@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('title', 'About eBikes Florida')
+
+@section('description',
+    'Explore the benefits of electric bikes in Florida. Our site provides information and
+    resources.')
+
 @section('content')
     <div class="container mx-auto my-10">
         <h1 class="text-3xl font-bold mb-5">About Us</h1>

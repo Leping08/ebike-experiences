@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+@section('title', 'eBikes Florida')
+
+@section('description',
+    'Explore the benefits of electric bikes in Florida. Our site provides information and resources
+    to help you make the switch to eco-friendly transportation. Learn about the latest e-bike models, regulations, and best
+    practices for safe riding in the Sunshine State.')
+
 @section('content')
     <main class="container mx-auto py-8">
         <h1 class="text-4xl font-bold mb-8">Welcome to My Site</h1>
