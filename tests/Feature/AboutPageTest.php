@@ -16,6 +16,7 @@ class AboutPageTest extends TestCase
      */
     public function test_about_page_loads()
     {
+        // Testing
         $response = $this->get(route('about'));
 
         $response->assertStatus(200);
