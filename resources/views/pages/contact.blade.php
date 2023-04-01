@@ -35,6 +35,15 @@
                             @enderror
                         </div>
                         <div class="mb-6">
+                            <label class="block text-gray-700 font-bold mb-2" for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone"
+                                class="w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline-gray @error('phone') border-red-500 @enderror"
+                                placeholder="Enter your phone number" value="{{ old('phone') }}">
+                            @error('phone')
+                                <p class="text-red-500 mt-2 text-sm">{{ $message }}</p>
+                            @enderror
+                        </div>
+                        <div class="mb-6">
                             <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
                             <textarea name="message" id="message" rows="5"
                                 class="w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline-gray @error('message') border-red-500 @enderror"
