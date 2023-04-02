@@ -7,6 +7,7 @@
     resources.')
 
 @section('content')
+    {{-- @todo make this work in dark mode --}}
     <div class="container mx-auto py-10">
         <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-5xl">
             <div class="md:flex">

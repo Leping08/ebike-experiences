@@ -12,9 +12,7 @@
 
 <body class="flex flex-col min-h-screen">
     <!-- Define the header/nav section -->
-    <header>
-        @include('layouts.nav')
-    </header>
+    @include('layouts.nav')
 
     <!-- Define the content section -->
     <main class="flex-grow">
@@ -22,9 +20,7 @@
     </main>
 
     <!-- Define the footer section -->
-    <footer>
-        @include('layouts.footer')
-    </footer>
+    @include('layouts.footer')
 
 </body>
 

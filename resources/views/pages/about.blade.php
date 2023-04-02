@@ -7,6 +7,7 @@
     resources.')
 
 @section('content')
+    {{-- @todo make this work in dark mode --}}
     <div class="container mx-auto my-10">
         <h1 class="text-3xl font-bold mb-5">About Us</h1>
         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quam vel elementum faucibus.
