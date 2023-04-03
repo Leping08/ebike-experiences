@@ -15,7 +15,7 @@
     ];
 @endphp
 
-<footer class="bg-white dark:bg-gray-900">
+<footer class="bg-gray-100 dark:bg-gray-900">
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 lg:px-8">
         <nav class="flex justify-center space-x-12 pb-4 items-center" aria-label="Footer">
             @foreach ($links as $item)
