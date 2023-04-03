@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" class="dark">
 
 <head>
     <meta charset="utf-8">
@@ -10,18 +10,25 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="flex flex-col min-h-screen">
-    <!-- Define the header/nav section -->
-    @include('layouts.nav')
+<body>
 
-    <!-- Define the content section -->
-    <main class="flex-grow">
-        @yield('content')
-    </main>
+    <div class="flex flex-col min-h-screen" id="app">
 
-    <!-- Define the footer section -->
-    @include('layouts.footer')
+        <!-- Define the header/nav section -->
+        @include('layouts.nav')
 
+        <!-- Define the content section -->
+        <main class="flex-grow">
+            @yield('content')
+        </main>
+
+        <!-- Define the footer section -->
+        @include('layouts.footer')
+
+    </div>
+
+
+    @vite('resources/js/app.js')
 </body>
 
 </html>

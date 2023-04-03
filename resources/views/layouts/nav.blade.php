@@ -1,9 +1,4 @@
-@php
-    $nav = [['name' => 'Home', 'href' => route('home')], ['name' => 'About', 'href' => route('about')], ['name' => 'Contact', 'href' => route('contact')]];
-@endphp
-
 {{-- @todo wire up mobile nav bar state --}}
-{{-- @todo add toggle for dark state --}}
 <header class="bg-white dark:bg-gray-900">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
@@ -25,9 +20,9 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            @foreach ($nav as $item)
-                <a href="{{ $item['href'] }}"
-                    class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:hover:text-gray-200 hover:text-gray-700">{{ $item['name'] }}</a>
+            @foreach (config('nav.links') as $item)
+                <a href="{{ route($item['route_name']) }}"
+                    class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:hover:text-gray-200 hover:text-gray-700">{{ $item['text'] }}</a>
             @endforeach
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -58,9 +53,9 @@
             <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/25">
                     <div class="space-y-2 py-6">
-                        @foreach ($nav as $item)
-                            <a href="{{ $item['href'] }}"
-                                class="-m-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 dark:text-white dark:hover:bg-gray-800 text-gray-900 hover:bg-gray-100">{{ $item['name'] }}</a>
+                        @foreach (config('nav.links') as $item)
+                            <a href="{{ route($item['route_name']) }}"
+                                class="-m-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 dark:text-white dark:hover:bg-gray-800 text-gray-900 hover:bg-gray-100">{{ $item['text'] }}</a>
                         @endforeach
                     </div>
                     {{-- <div class="py-6">
