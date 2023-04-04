@@ -28,3 +28,6 @@ Route::get('/contact-us', function () {
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
+Route::get('/trails/legacy-trail', function () {
+    return view('pages.trails.legacy');
+})->name('trails.legacy-trail');
