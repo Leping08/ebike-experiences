@@ -4,10 +4,10 @@
             'text' => 'Home',
             'link' => route('home'),
         ],
-        [
-            'text' => 'About',
-            'link' => route('about'),
-        ],
+        // [
+        //     'text' => 'About',
+        //     'link' => route('about'),
+        // ],
         [
             'text' => 'Legacy Trail',
             'link' => route('trails.legacy-trail'),

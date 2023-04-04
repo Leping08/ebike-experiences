@@ -18,7 +18,7 @@
         @include('layouts.nav')
 
         <!-- Define the content section -->
-        <main class="flex-grow bg-white dark:bg-gray-800">
+        <main class="flex-grow">
             @yield('content')
         </main>
 

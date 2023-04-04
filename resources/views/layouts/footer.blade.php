@@ -4,10 +4,10 @@
             'text' => 'Home',
             'link' => route('home'),
         ],
-        [
-            'text' => 'About',
-            'link' => route('about'),
-        ],
+        // [
+        //     'text' => 'About',
+        //     'link' => route('about'),
+        // ],
         [
             'text' => 'Contact',
             'link' => route('contact'),
