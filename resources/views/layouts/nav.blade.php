@@ -9,6 +9,10 @@
             'link' => route('about'),
         ],
         [
+            'text' => 'Legacy Trail',
+            'link' => route('trails.legacy-trail'),
+        ],
+        [
             'text' => 'Contact',
             'link' => route('contact'),
         ],
