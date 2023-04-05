@@ -8,7 +8,7 @@
 
 @section('content')
     {{-- @todo make this work in dark mode --}}
-    <div class="bg-gray-100 dark:bg-gray-800">
+    <div class="bg-white dark:bg-gray-800">
         <div class="container mx-auto py-10 h-screen">
             <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-5xl">
                 <div class="md:flex">
