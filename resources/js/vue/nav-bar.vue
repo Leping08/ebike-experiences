@@ -1,18 +1,21 @@
 <template>
-    <header class="bg-gray-100 dark:bg-gray-900">
+    <header class="bg-gray-900 dark:bg-gray-900">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
+                <a href="#" class="-m-1.5 p-1.5 flex items-center">
                     <span class="sr-only">Your Company</span>
                     <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                         alt="">
+                    <div class="text-gray-100 tracking-wide text-lg ml-4">
+                        eBike Experiences
+                    </div>
                 </a>
             </div>
             <div class="flex lg:hidden">
                 <!-- Mobile menu button -->
                 <button type="button"
                     @click="mobileNavOpen = true"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-600 dark:text-gray-400">
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
                     <span class="sr-only">Open main menu</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                         aria-hidden="true">
