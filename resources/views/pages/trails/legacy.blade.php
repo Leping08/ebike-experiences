@@ -78,6 +78,9 @@
                 </div>
             </div>
         </div>
+        <div class="w-full">
+            <trail-map />
+        </div>
         <div class="bg-gray-100 dark:bg-gray-900">
             <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
                 <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
