@@ -1,7 +1,4 @@
 <template>
-    <div>
-        {{ apiKey }}
-    </div>
     <GoogleMap :api-key="apiKey" style="width: 100%; height: 500px" :center="trailHeads[1].position" :zoom="11">
         <template v-for="(trailHead, index) in trailHeads" :key="index">
             <Marker :options="trailHead">
