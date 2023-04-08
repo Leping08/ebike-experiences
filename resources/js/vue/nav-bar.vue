@@ -59,7 +59,7 @@
                         <div class="space-y-2 py-6">
                             <div v-for="(item, index) in links" :key="index">
                                 <a :href="item.link"
-                                    class="-m-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-100">{{
+                                    class="-m-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">{{
                                         item.text }}</a>
                             </div>
                         </div>
