@@ -1,11 +1,10 @@
 <template>
-    <header class="bg-gray-900 dark:bg-gray-900">
+    <header class="bg-gray-900">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5 flex items-center">
                     <span class="sr-only">Your Company</span>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="">
+                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
                     <div class="text-gray-100 tracking-wide text-lg ml-4">
                         eBike Experiences
                     </div>
@@ -13,8 +12,7 @@
             </div>
             <div class="flex lg:hidden">
                 <!-- Mobile menu button -->
-                <button type="button"
-                    @click="mobileNavOpen = true"
+                <button type="button" @click="mobileNavOpen = true"
                     class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
                     <span class="sr-only">Open main menu</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -26,8 +24,8 @@
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
                 <div v-for="(item, index) in links" :key="index">
-                    <a :href="item.link"
-                            class="text-sm font-semibold leading-6 text-gray-900 dark:text-white dark:hover:text-gray-200 hover:text-gray-700">{{ item.text }}</a>
+                    <a :href="item.link" class="text-sm font-semibold leading-6 text-white hover:text-gray-300">{{
+                        item.text }}</a>
                 </div>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -47,7 +45,8 @@
                         <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                             alt="">
                     </a>
-                    <button @click="mobileNavOpen = !mobileNavOpen" type="button" class="-m-2.5 rounded-md p-2.5 dark:text-gray-400 text-gray-600">
+                    <button @click="mobileNavOpen = !mobileNavOpen" type="button"
+                        class="-m-2.5 rounded-md p-2.5 dark:text-gray-400 text-gray-600">
                         <span class="sr-only">Close menu</span>
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                             aria-hidden="true">
@@ -60,14 +59,10 @@
                         <div class="space-y-2 py-6">
                             <div v-for="(item, index) in links" :key="index">
                                 <a :href="item.link"
-                                class="-m-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 dark:text-white dark:hover:bg-gray-800 text-gray-900 hover:bg-gray-100">{{ item.text }}</a>
+                                    class="-m-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-100">{{
+                                        item.text }}</a>
                             </div>
                         </div>
-                        <!-- <div class="py-6">
-                            <a href="#"
-                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 dark:text-white dark:hover:bg-gray-800 text-gray-900 hover:bg-gray-100">Log
-                                in</a>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -76,14 +71,14 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue'
+import { ref } from 'vue'
 
-    defineProps({
-        links: {
-            type: Array,
-            default: () => []
-        }
-    })
+defineProps({
+    links: {
+        type: Array,
+        default: () => []
+    }
+})
 
-    const mobileNavOpen = ref(false)
+const mobileNavOpen = ref(false)
 </script>

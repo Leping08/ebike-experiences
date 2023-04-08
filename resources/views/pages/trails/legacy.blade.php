@@ -20,7 +20,7 @@
                         <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">The Legacy Trail is a popular
                             multi-use trail located in Sarasota County, Florida. It is a paved trail that is open to
                             cyclists,
-                            walkers, runners, and inline skaters, and is approximately 10.6 miles long.</p>
+                            walkers, runners, and inline skaters, and is approximately 18.5 miles long.</p>
                         <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">The trail starts at the southern
                             end
                             in Sarasota at the historic train station on McIntosh Road and extends to Venice, Florida. The
@@ -45,9 +45,9 @@
                             to explore the natural beauty of Sarasota County while getting some exercise.
                         </p>
                         <div class="mt-10 flex">
-                            <a href="#"
-                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Join
-                                our team <span aria-hidden="true">&rarr;</span></a>
+                            <a href="#map"
+                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
+                                Map</a>
                         </div>
                     </div>
                     <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full">
+        <div id="map" class="w-full">
             <trail-map />
         </div>
         <div class="bg-gray-100 dark:bg-gray-900">
