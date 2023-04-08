@@ -79,7 +79,7 @@
             </div>
         </div>
         <div id="map" class="w-full">
-            <trail-map />
+            <trail-map api-key="{{ config('map.api_key') }}" />
         </div>
         <div class="bg-gray-100 dark:bg-gray-900">
             <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
