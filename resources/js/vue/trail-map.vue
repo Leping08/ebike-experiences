@@ -1,6 +1,5 @@
 <template>
-    <GoogleMap api-key="AIzaSyCoFbUqwbcikUk6VXrvr5tbWAJRK9ceqlU" style="width: 100%; height: 500px"
-        :center="trailHeads[1].position" :zoom="11">
+    <GoogleMap :api-key="apiKey" style="width: 100%; height: 500px" :center="trailHeads[1].position" :zoom="11">
         <template v-for="(trailHead, index) in trailHeads" :key="index">
             <Marker :options="trailHead">
                 <InfoWindow>
@@ -71,6 +70,8 @@ import { GoogleMap, Marker, Polyline, InfoWindow } from "vue3-google-map";
 export default defineComponent({
     components: { GoogleMap, Marker, Polyline, InfoWindow },
     setup() {
+        const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
         const trailHeads = [
             {
                 title: "Ashton Trailhead",
@@ -172,7 +173,7 @@ export default defineComponent({
             strokeWeight: 4,
         }
 
-        return { trailOptions, trailHeads };
+        return { apiKey, trailOptions, trailHeads };
     },
 });
 </script>
