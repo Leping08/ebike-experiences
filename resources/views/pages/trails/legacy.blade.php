@@ -9,19 +9,88 @@
 
 @section('content')
     <div>
-        <div class="overflow-hidden bg-white dark:bg-gray-800 py-32">
+
+
+        <div class="overflow-hidden bg-white dark:bg-gray-800 pt-10">
+            <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
+
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol role="list" class="flex items-center space-x-4">
+                        <li>
+                            <div>
+                                <a href="#"
+                                    class="dark:text-gray-300 dark:hover:text-gray-500 text-gray-700  hover:text-gray-500">
+                                    <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Home</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <a href="#"
+                                    class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500">Trails</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <a href="#"
+                                    class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
+                                    aria-current="page">Sarsaota</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <a href="#"
+                                    class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
+                                    aria-current="page">The Legacy Trail</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="overflow-hidden bg-white dark:bg-gray-800 pb-32 pt-12">
             <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
                 <div
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
                     <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">The Legacy
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">The
+                            Legacy
                             Trail
                         </h2>
                         <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">The Legacy Trail is a popular
                             multi-use trail located in Sarasota County, Florida. It is a paved trail that is open to
                             cyclists,
                             walkers, runners, and inline skaters, and is approximately 18.5 miles long.</p>
-                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">The trail starts at the southern
+                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">The trail starts at the
+                            southern
                             end
                             in Sarasota at the historic train station on McIntosh Road and extends to Venice, Florida. The
                             trail
@@ -78,9 +147,13 @@
                 </div>
             </div>
         </div>
+
+
         <div id="map" class="w-full">
             <trail-map api-key="{{ config('map.api_key') }}" />
         </div>
+
+
         <div class="bg-gray-100 dark:bg-gray-900">
             <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
                 <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
@@ -132,6 +205,15 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <div class="">
+                <iframe class="h-screen w-full"
+                    src="https://www.custompromotionsinc.com/flipbooks/LegacyTrail/index.html"></iframe>
+            </div>
+        </div>
+
+
         <div>
             @include('components.ebike-cta')
         </div>
