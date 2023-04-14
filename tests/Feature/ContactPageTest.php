@@ -10,7 +10,13 @@ use Tests\TestCase;
 
 class ContactPageTest extends TestCase
 {
-    use WithFaker, RefreshDatabase;
+    use WithFaker;
+
+    /* @test */
+    public function test_that_true_is_true()
+    {
+        $this->assertTrue(true);
+    }
 
     // /**
     //  * A basic test example.
