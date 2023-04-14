@@ -18,14 +18,6 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('pages.about');
-})->name('about');
-
-Route::get('/contact-us', function () {
-    return view('pages.contact');
-})->name('contact');
-
 Route::get('/trails', function () {
     return view('pages.trails.index');
 })->name('trails.index');
@@ -35,3 +27,7 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::get('/trails/legacy-trail', function () {
     return view('pages.trails.legacy');
 })->name('trails.legacy-trail');
+
+// Route::get('/contact-us', function () {
+//     return view('pages.contact');
+// })->name('contact');
