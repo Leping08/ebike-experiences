@@ -4,13 +4,9 @@
             'text' => 'Home',
             'link' => route('home'),
         ],
-        // [
-        //     'text' => 'About',
-        //     'link' => route('about'),
-        // ],
         [
-            'text' => 'Contact',
-            'link' => route('contact'),
+            'text' => 'Trails',
+            'link' => route('trails.index'),
         ],
     ];
 @endphp
