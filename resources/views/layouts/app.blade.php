@@ -10,6 +10,17 @@
     @vite('resources/css/app.css')
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B8JTF9B99T"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-B8JTF9B99T');
+</script>
+
 <body>
 
     <div class="flex flex-col min-h-screen" id="app">
