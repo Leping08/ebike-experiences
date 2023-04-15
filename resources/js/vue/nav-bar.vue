@@ -6,7 +6,7 @@
                     <span class="sr-only">Your Company</span>
                     <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
                     <div class="text-gray-100 tracking-wide text-lg ml-4">
-                        eBike Experiences
+                        {{ config('app.seo_name') }}
                     </div>
                 </a>
             </div>

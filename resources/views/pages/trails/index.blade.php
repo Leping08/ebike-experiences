@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'eBikes Florida')
+@section('title', 'EBikes Florida')
 
 @section('description',
     'Explore the benefits of electric bikes in Florida. Our site provides information and resources
@@ -160,7 +160,7 @@
             </div>
 
 
-            <div class="overflow-hidden bg-white shadow rounded-md mt-10">
+            <div class="overflow-hidden bg-white dark:bg-gray-900 shadow rounded-md mt-10">
                 <div class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-5 sm:px-6">
                     <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-gray-100">Bradenton</h3>
                 </div>
@@ -215,7 +215,7 @@
             </div>
 
 
-            <div class="overflow-hidden bg-white shadow rounded-md mt-10">
+            <div class="overflow-hidden bg-white dark:bg-gray-900 shadow rounded-md mt-10">
                 <div class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-5 sm:px-6">
                     <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-gray-100">Venice</h3>
                 </div>

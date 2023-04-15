@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Explore the Legacy Trail on eBikes')
+@section('title', 'Explore the Legacy Trail on EBikes')
 
 @section('description',
-    'Discover the beauty of the Legacy Trail with our premium selection of eBikes. Rent or buy your
+    'Discover the beauty of the Legacy Trail with our premium selection of EBikes. Rent or buy your
     perfect ride and explore the scenic trail like never before. Book your test ride now and experience the joy of
     effortless cycling on the Legacy Trail.')
 

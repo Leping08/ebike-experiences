@@ -1,6 +1,6 @@
-# eBike Experiences
+# EBike Experiences
 
-A website to shocase the eBike Experiences of Florida.
+A website to shocase the EBike Experiences of Florida.
 
 ## Installation
 
@@ -42,4 +42,4 @@ Run `php artisan serve --env=production` to start the production server.
 
 ## License
 
-The eBike Experiences website is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The EBike Experiences website is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

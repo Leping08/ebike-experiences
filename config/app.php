@@ -17,7 +17,7 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
-    'seo_name' => 'eBike Experiences',
+    'seo_name' => 'EBike Experiences',
 
     /*
     |--------------------------------------------------------------------------

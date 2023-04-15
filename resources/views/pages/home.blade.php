@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'eBikes Florida')
+@section('title', 'EBikes Florida')
 
 @section('description',
     'Explore the benefits of electric bikes in Florida. Our site provides information and resources
@@ -17,7 +17,7 @@
             <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                     <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-6xl">Experience the
-                        eBike difference
+                        EBike difference
                     </h1>
                     <p class="relative mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
                         Cupidatat minim id
