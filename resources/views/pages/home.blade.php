@@ -19,7 +19,7 @@
                     <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-6xl">Experience the
                         EBike difference
                     </h1>
-                    <p class="relative mt-6 pr-10 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
+                    <p class="relative mt-6 md:pr-10 sm:pr-0 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
                         Welcome to our website dedicated to all things e-bike! If you're looking for a thrilling and
                         eco-friendly way to explore the outdoors, you've come to the right place.
 
