@@ -1,5 +1,5 @@
 <template>
-    <GoogleMap :api-key="apiKey" style="width: 100%; height: 500px" :center="trailHeads[1].position" :zoom="11">
+    <GoogleMap :api-key="apiKey" style="width: 100%; height: 500px" :center="center" :zoom="11">
         <template v-for="(trailHead, index) in trailHeads" :key="index">
             <Marker :options="trailHead">
                 <InfoWindow>
@@ -71,56 +71,19 @@ defineProps({
     apiKey: {
         type: String,
         default: ''
-    }
+    },
+    trailHeads: {
+        type: Array,
+        default: []
+    },
 });
 
-const trailHeads = [
-    {
-        title: "Ashton Trailhead",
-        videoId: "fh_F9yEEae8",
-        parking: true,
-        water: true,
-        bathrooms: false,
-        position: {
-            lat: 27.276596,
-            lng: -82.482037,
-        },
-    },
-    {
-        title: "Culverhouse Park",
-        videoId: "AS0TZPD80fQ",
-        parking: true,
-        water: false,
-        bathrooms: false,
-        position: {
-            lat: 27.249038,
-            lng: -82.475492,
-        },
-    },
-    {
-        title: "Payne Park",
-        videoId: "O9CH-13SlTc",
-        parking: true,
-        water: true,
-        bathrooms: false,
-        position: {
-            lat: 27.333336,
-            lng: -82.525669,
-        },
-    },
-    {
-        title: "McIntosh Trailhead",
-        videoId: "KC8oYgzlP4Y",
-        parking: false,
-        water: true,
-        bathrooms: true,
-        position: {
-            lat: 27.23801281032138,
-            lng: -82.47583695874043,
-        },
-    },
-];
+const center = {
+    lat: 27.276596,
+    lng: -82.482037
+};
 
+// @todo add to DB at some point
 const trailCords = [
     { lat: 27.101446, lng: -82.440600 },
     { lat: 27.108499, lng: -82.442102 },

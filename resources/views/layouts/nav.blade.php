@@ -1,6 +1,5 @@
 @php
     $links = [
-
         [
             'text' => 'Home',
             'link' => route('home'),
