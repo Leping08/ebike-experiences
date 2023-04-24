@@ -52,10 +52,6 @@
                                                     </svg>
                                                     20 Miles
                                                 </p>
-                                                {{-- <p class="mt-2 text-sm text-gray-500">
-                                                    Applied on
-                                                    <time datetime="2020-01-07">January 7, 2020</time>
-                                                </p> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -99,10 +95,6 @@
                                                     </svg>
                                                     10 Miles
                                                 </p>
-                                                {{-- <p class="mt-2 text-sm text-gray-500">
-                                                    Applied on
-                                                    <time datetime="2020-01-07">January 7, 2020</time>
-                                                </p> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -146,9 +138,6 @@
                                                     </svg>
                                                     1.5 Miles
                                                 </p>
-                                                {{-- <p class="mt-2 text-sm text-gray-500">
-                                                    Bike lanes
-                                                </p> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -200,10 +189,6 @@
                                                     </svg>
                                                     7.5 Miles
                                                 </p>
-                                                {{-- <p class="mt-2 text-sm text-gray-500">
-                                                    Applied on
-                                                    <time datetime="2020-01-07">January 7, 2020</time>
-                                                </p> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -259,10 +244,6 @@
                                                     </svg>
                                                     7.5 Miles
                                                 </p>
-                                                {{-- <p class="mt-2 text-sm text-gray-500">
-                                                    Applied on
-                                                    <time datetime="2020-01-07">January 7, 2020</time>
-                                                </p> --}}
                                             </div>
                                         </div>
                                     </div>

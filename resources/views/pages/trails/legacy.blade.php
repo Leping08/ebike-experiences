@@ -58,6 +58,42 @@
                     'lng' => -82.47583695874043,
                 ],
             ],
+            [
+                'title' => 'Sarasota Springs Trailhead',
+                'video_id' => 'h4qiMONesNo',
+                'description' => 'The Sarasota Springs Trailhead is located at the intersection of...',
+                'parking' => false,
+                'water' => true,
+                'bathrooms' => true,
+                'position' => [
+                    'lat' => 27.307427883724124,
+                    'lng' => -82.48890062035929,
+                ],
+            ],
+            [
+                'title' => 'Pompano Trailhead',
+                'video_id' => '2bhBa_nUe28',
+                'description' => 'The Pompano Trailhead is located at the intersection of...',
+                'parking' => true,
+                'water' => true,
+                'bathrooms' => true,
+                'position' => [
+                    'lat' => 27.33087768815836,
+                    'lng' => -82.5076394973437,
+                ],
+            ],
+            [
+                'title' => 'Osprey Junction Trailhead',
+                'video_id' => 'fGmrP8C8fJU',
+                'description' => 'The Pompano Trailhead is located at the intersection of...',
+                'parking' => true,
+                'water' => true,
+                'bathrooms' => false,
+                'position' => [
+                    'lat' => 27.196500393592462,
+                    'lng' => -82.46381693586189,
+                ],
+            ]
         ];
     @endphp
 
