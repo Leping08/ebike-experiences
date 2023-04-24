@@ -141,7 +141,7 @@
                         <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">The Legacy Trail is a popular
                             multi-use trail located in Sarasota County, Florida. It is a paved trail that is open to
                             cyclists,
-                            walkers, runners, and inline skaters, and is approximately 18.5 miles long.</p>
+                            walkers, runners, and inline skaters, and is approximately 20 miles long.</p>
                         <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">The trail starts at the
                             southern
                             end
@@ -208,7 +208,7 @@
                     <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                         <div class="lg:w-full lg:max-w-4xl lg:flex-auto">
                             <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 dark:text-gray-300">
-                                <p>The Legacy Trail is a 18.5-mile trail in Sarasota County that follows the scenic CSX
+                                <p>The Legacy Trail is a 20 mile trail in Sarasota County that follows the scenic CSX
                                     railroad
                                     corridor, offering opportunities for recreation, historical discovery, and environmental
                                     appreciation. The restored Venice Train Depot serves as a historical resource and
@@ -230,7 +230,7 @@
                                 <div class="flex flex-col-reverse gap-y-4">
                                     <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Miles of trails
                                     </dt>
-                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">18.5
+                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">20
                                     </dd>
                                 </div>
 
@@ -331,19 +331,6 @@
                                     <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-700 dark:text-gray-300">
                                         {{ $trailhead['description'] }}</p>
                                 </div>
-                                {{-- <div class="relative mt-8 flex items-center gap-x-4">
-                                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        alt="" class="h-10 w-10 rounded-full bg-gray-100">
-                                    <div class="text-sm leading-6">
-                                        <p class="font-semibold text-gray-900">
-                                            <a href="#">
-                                                <span class="absolute inset-0"></span>
-                                                Michael Foster
-                                            </a>
-                                        </p>
-                                        <p class="text-gray-600">Co-Founder / CTO</p>
-                                    </div>
-                                </div> --}}
                             </div>
                         </article>
                     @endforeach
