@@ -13,9 +13,9 @@
         {{-- <div class="w-full">
         <iframe class="h-96 w-2/3" src="http://custompromotionsinc.com/flipbooks/LaboratoryMillWithPrices/"></iframe>
         </div> --}}
-        <div class="mx-auto container flex max-w-7xl px-6 pb-32 pt-20 sm:pt-60 lg:px-8 lg:pt-32">
+        <div class="mx-auto container flex px-6 pb-32 pt-20 sm:pt-60 lg:px-8 lg:pt-32">
             <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl md:max-w-full">
                     <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-6xl">Experience the
                         EBike difference
                     </h1>
@@ -136,8 +136,8 @@
                             </div>
                         </div>
                         <div class="flex items-start justify-end lg:order-first">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Legacy_Trail_South_Terminus_at_Venice.jpg"
-                                alt="Product screenshot" class="w-full rounded-xl shadow-xl">
+                            <img src="{{ asset('/img/trails/legacy-trail/trail-lights.jpg') }}" alt="The Legacy Trail"
+                                class="w-full rounded-xl shadow-xl">
                         </div>
                     </div>
                 </div>
