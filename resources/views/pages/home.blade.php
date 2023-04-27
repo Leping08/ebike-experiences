@@ -42,27 +42,27 @@
             <div class="gap-8 w-1/2 hidden lg:flex">
                 <div class="mt-20 w-44">
                     <div class="mt-8">
-                        <img src="https://images.unsplash.com/photo-1620282451330-467acd26eb99" alt="Bike image"
+                        <img src="{{ asset('/img/bikes/speedometer.jpg') }}" alt="Bike image"
                             class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                     </div>
                     <div class="mt-8">
-                        <img src="https://images.unsplash.com/photo-1656662570684-4e14a6677c74" alt="Bike image"
+                        <img src="{{ asset('/img/bikes/folding-bike.jpg') }}" alt="Bike image"
                             class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
                 <div class="mt-10 w-44">
                     <div class="mt-8">
-                        <img src="https://images.unsplash.com/photo-1622772526703-2e3f1e4e444b" alt="Bike image"
+                        <img src="{{ asset('/img/bikes/sunset.jpg') }}" alt="Bike image"
                             class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                     </div>
                     <div class="mt-8">
-                        <img src="https://images.unsplash.com/photo-1622689381190-b46bc99ab657" alt="Bike image"
+                        <img src="{{ asset('/img/bikes/bike-light.jpg') }}" alt="Bike image"
                             class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
                 <div class="mt-40 w-44">
                     <div class="mt-8">
-                        <img src="https://images.unsplash.com/photo-1669183016652-3379b375604f" alt="Bike image"
+                        <img src="{{ asset('/img/bikes/blue-bike.jpg') }}" alt="Bike image"
                             class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
