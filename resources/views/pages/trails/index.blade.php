@@ -8,7 +8,125 @@
     practices for safe riding in the Sunshine State.')
 
 @section('content')
+    @php
+        $citiesWithTrails = [
+            [
+                'name' => 'Sarasota',
+                'trails' => [
+                    [
+                        'name' => 'Legacy Trail',
+                        'route' => route('trails.legacy-trail'),
+                        'image' => 'https://upload.wikimedia.org/wikipedia/commons/4/46/Legacy_Trail_South_Terminus_at_Venice.jpg',
+                        'description' => 'Where every mile tells a story of history, culture, and conservation.',
+                        'length' => '10.6 miles',
+                        'icon' => 'road',
+                        'coming_soon' => false,
+                    ],
+                    [
+                        'name' => 'Gateway to the beaches',
+                        'route' => null,
+                        'image' => 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda',
+                        'description' => 'Ride from the legacy trail to the beaches.',
+                        'length' => '10.6 miles',
+                        'icon' => 'umbrella-beach',
+                        'coming_soon' => true,
+                    ],
+                    [
+                        'name' => 'The Ringling Bridge',
+                        'route' => null,
+                        'image' => 'https://assets.site-static.com/userFiles/547/image/DowntownSarasotaSmall.jpg',
+                        'description' => 'Corss the iconic Ringling Bridge.',
+                        'length' => '1.5 miles',
+                        'icon' => 'bridge',
+                        'coming_soon' => true,
+                    ],
+                ],
+            ],
+            [
+                'name' => 'Bradenton',
+                'trails' => [
+                    [
+                        'name' => 'Robinson Preserve',
+                        'route' => null,
+                        'image' => 'https://media-cdn.tripadvisor.com/media/photo-s/03/3c/c9/87/robinson-nature-preserve.jpg',
+                        'description' => 'Where nature meets adventure.',
+                        'length' => '10.6 miles',
+                        'icon' => 'bridge',
+                        'coming_soon' => true,
+                    ],
+                ],
+            ],
+            [
+                'name' => 'Venice',
+                'trails' => [
+                    [
+                        'name' => 'Venice Train Station',
+                        'route' => null,
+                        'image' => 'https://www.mustdo.com/wp-content/uploads/2016/12/Historic-Venice-Train-Depot-Tours-Venice-FL.jpg',
+                        'description' => 'Where old-world charm meets modern convenience.',
+                        'length' => '10.6 miles',
+                        'icon' => 'railroad-light',
+                        'coming_soon' => true,
+                    ],
+                ],
+            ],
+        ];
+    @endphp
+
     <main class="bg-gray-200 dark:bg-gray-800">
+        <div class="container mx-auto py-10 px-4 md:px-0">
+            @foreach ($citiesWithTrails as $cityWithTrails)
+                <div class="flex items-center">
+                    <h3 class="text-2xl font-semibold leading-6 text-gray-900 dark:text-gray-100">
+                        {{ $cityWithTrails['name'] }}
+                    </h3>
+                    <div class="border-b border-gray-500 dark:border-gray-500 pb-5 w-full mb-4 ml-6"></div>
+                </div>
+
+                <div>
+                    <div
+                        class="mx-auto mt-8 mb-16 grid grid-cols-1 gap-x-4 md:gap-x-6 gap-y-4 md:gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
+                        @foreach ($cityWithTrails['trails'] as $trail)
+                            <div>
+                                <a href="{{ $trail['route'] ? $trail['route'] : '#' }}">
+                                    <div class="flex flex-col items-start dark:bg-gray-900 rounded-lg overflow-hidden">
+                                        <div class="relative">
+                                            <img class="aspect-[3/2] w-full object-cover" src="{{ $trail['image'] }}"
+                                                alt="">
+                                            @if ($trail['coming_soon'])
+                                                <div
+                                                    class="absolute top-0 right-0 w-32 h-32 bg-indigo-800 text-white text-center leading-10 triangle">
+                                                    <p class="absolute top-0 right-0 text-md rotate-45 m-4 leading-5">
+                                                        Coming<br>
+                                                        Soon</p>
+                                                </div>
+                                            @endif
+                                        </div>
+                                        <div class="max-w-xl p-4">
+                                            <div class="group relative">
+                                                <div class="flex items-center justify-between mt-2">
+                                                    <h3
+                                                        class="text-2xl font-semibold leading-6 text-gray-900 dark:text-gray-100">
+                                                        <span class="absolute inset-0"></span>
+                                                        {{ $trail['name'] }}
+                                                    </h3>
+                                                </div>
+                                                <p
+                                                    class="mt-5 line-clamp-3 text-sm leading-6 text-gray-700 dark:text-gray-300">
+                                                    {{ $trail['description'] }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </main>
+
+    {{-- <main class="bg-gray-200 dark:bg-gray-800">
         <div class="container mx-auto py-10">
 
             <div class="overflow-hidden bg-white dark:bg-gray-900 shadow rounded-md">
@@ -17,7 +135,8 @@
                 </div>
                 <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
                     <li>
-                        <a href="{{ route('trails.legacy-trail') }}" class="block hover:bg-gray-50 dark:hover:bg-gray-950 bg-white dark:bg-gray-900">
+                        <a href="{{ route('trails.legacy-trail') }}"
+                            class="block hover:bg-gray-50 dark:hover:bg-gray-950 bg-white dark:bg-gray-900">
                             <div class="flex items-center px-4 py-4 sm:px-6">
                                 <div class="flex min-w-0 flex-1 items-center">
                                     <div class="flex-shrink-0">
@@ -27,13 +146,16 @@
                                     </div>
                                     <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                                         <div>
-                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">The Legacy Trail
+                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">The
+                                                Legacy Trail
                                             </p>
                                             <p class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400">
 
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-1.5 h-5 w-5 flex-shrink-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    fill="currentColor" class="mr-1.5 h-5 w-5 flex-shrink-0">
                                                     <title>road-variant</title>
-                                                    <path d="M18.1,4.8C18,4.3 17.6,4 17.1,4H13L13.2,7H10.8L11,4H6.8C6.3,4 5.9,4.4 5.8,4.8L3.1,18.8C3,19.4 3.5,20 4.1,20H10L10.3,15H13.7L14,20H19.8C20.4,20 20.9,19.4 20.8,18.8L18.1,4.8M10.4,13L10.6,9H13.2L13.4,13H10.4Z" />
+                                                    <path
+                                                        d="M18.1,4.8C18,4.3 17.6,4 17.1,4H13L13.2,7H10.8L11,4H6.8C6.3,4 5.9,4.4 5.8,4.8L3.1,18.8C3,19.4 3.5,20 4.1,20H10L10.3,15H13.7L14,20H19.8C20.4,20 20.9,19.4 20.8,18.8L18.1,4.8M10.4,13L10.6,9H13.2L13.4,13H10.4Z" />
                                                 </svg>
 
                                                 <span class="truncate">Where every mile tells a story of history, culture,
@@ -71,7 +193,8 @@
                                     </div>
                                     <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                                         <div>
-                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">Gateway to the beaches
+                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">
+                                                Gateway to the beaches
                                             </p>
                                             <p class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -114,7 +237,9 @@
                                     </div>
                                     <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                                         <div>
-                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">The Ringling Bridge</p>
+                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">
+                                                The
+                                                Ringling Bridge</p>
                                             <p class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400">
 
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -165,7 +290,8 @@
                                     </div>
                                     <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                                         <div>
-                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">Robinson Preserve</p>
+                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">
+                                                Robinson Preserve</p>
                                             </p>
                                             <p class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -216,14 +342,14 @@
                                     </div>
                                     <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                                         <div>
-                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">Venice Train Station
+                                            <p class="truncate text-sm font-medium text-indigo-600 dark:text-indigo-400">
+                                                Venice Train Station
                                             </p>
                                             </p>
                                             <p class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400">
 
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                    class="mr-1.5 h-5 w-5 flex-shrink-0"
-                                                    fill="currentColor">
+                                                    class="mr-1.5 h-5 w-5 flex-shrink-0" fill="currentColor">
                                                     <title>railroad-light</title>
                                                     <path
                                                         d="M17.67,10.5C16.4,10.5 15.27,11.3 14.85,12.5H13.17V7.77L16.66,9.86L17.66,8.14L14.11,6L17.68,3.86L16.68,2.14L13.17,4.23V2H11.17V4.23L7.68,2.14L6.68,3.86L10.23,6L6.66,8.14L7.66,9.86L11.17,7.77V12.5H9.5C8.36,9.32 3.66,10.13 3.66,13.5C3.66,16.87 8.36,17.68 9.5,14.5H11.17V20A2,2 0 0,0 9.17,22H15.17A2,2 0 0,0 13.17,20V14.5H14.85C15.66,16.8 18.73,17.22 20.13,15.23C21.53,13.24 20.1,10.5 17.67,10.5M6.67,14.5C5.78,14.5 5.33,13.42 5.96,12.79C6.59,12.16 7.67,12.61 7.67,13.5A1,1 0 0,1 6.67,14.5M17.67,14.5C16.78,14.5 16.33,13.42 16.96,12.79C17.59,12.16 18.67,12.61 18.67,13.5A1,1 0 0,1 17.67,14.5Z" />
@@ -255,5 +381,5 @@
             </div>
 
         </div>
-    </main>
+    </main> --}}
 @endsection
