@@ -210,24 +210,24 @@
                     </div>
                     <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                         <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <img src="https://www.friendsofthelegacytrail.org/wp-content/uploads/2022/09/IMG_6645-scaled-e1662571159357.jpg"
+                            <img src="{{ asset('/img/trails/legacy-trail/trail-first-photo.jpg') }}"
                                 alt=""
                                 class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                         </div>
                         <div
                             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
                             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Legacy_Trail_South_Terminus_at_Venice.jpg"
+                                <img src="{{ asset('/img/trails/legacy-trail/south-terminus-venice.jpg') }}"
                                     alt=""
                                     class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Legacy_Trail_South_Creek_Trestle.JPG/1920px-Legacy_Trail_South_Creek_Trestle.JPG"
+                                <img src="{{ asset('/img/trails/legacy-trail/south-creek.jpg') }}"
                                     alt=""
                                     class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Legacy_Trail_Shelter.JPG/1920px-Legacy_Trail_Shelter.JPG"
+                                <img src="{{ asset('/img/trails/legacy-trail/trail-shelter.jpg') }}"
                                     alt=""
                                     class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                             </div>
