@@ -80,7 +80,7 @@
                     <h3 class="text-2xl font-semibold leading-6 text-gray-900 dark:text-gray-100">
                         {{ $cityWithTrails['name'] }}
                     </h3>
-                    <div class="border-b border-gray-500 dark:border-gray-500 pb-5 w-full mb-4 ml-6"></div>
+                    <div class="border-b border-gray-400 dark:border-gray-600 pb-5 w-full mb-4 ml-6"></div>
                 </div>
 
                 <div>
@@ -89,7 +89,8 @@
                         @foreach ($cityWithTrails['trails'] as $trail)
                             <div>
                                 <a href="{{ $trail['route'] ? $trail['route'] : '#' }}">
-                                    <div class="flex flex-col items-start dark:bg-gray-900 rounded-lg overflow-hidden">
+                                    <div
+                                        class="flex flex-col items-start dark:bg-gray-900 bg-white rounded-lg overflow-hidden shadow">
                                         <div class="relative">
                                             <img class="aspect-[3/2] w-full object-cover" src="{{ $trail['image'] }}"
                                                 alt="">
