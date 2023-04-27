@@ -31,9 +31,9 @@
                         So buckle up (or should we say, pedal up?) and get ready for an electrifying journey through the
                         world of e-bike experiences!</p>
                     <div class="mt-10 flex items-center gap-x-6">
-                        <a href="#"
-                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-                            started</a>
+                        <a href="{{ route('trails.index') }}"
+                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Find
+                            a trail</a>
                         {{-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300">Live demo
                             <span aria-hidden="true">→</span></a> --}}
                     </div>
