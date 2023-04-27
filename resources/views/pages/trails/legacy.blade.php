@@ -93,7 +93,7 @@
                     'lat' => 27.196500393592462,
                     'lng' => -82.46381693586189,
                 ],
-            ]
+            ],
         ];
     @endphp
 
@@ -210,25 +210,21 @@
                     </div>
                     <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                         <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <img src="{{ asset('/img/trails/legacy-trail/trail-first-photo.jpg') }}"
-                                alt=""
+                            <img src="{{ asset('/img/trails/legacy-trail/trail-first-photo.jpg') }}" alt=""
                                 class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                         </div>
                         <div
                             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
                             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-terminus-venice.jpg') }}"
-                                    alt=""
+                                <img src="{{ asset('/img/trails/legacy-trail/south-terminus-venice.jpg') }}" alt=""
                                     class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-creek.jpg') }}"
-                                    alt=""
+                                <img src="{{ asset('/img/trails/legacy-trail/south-creek.jpg') }}" alt=""
                                     class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/trail-shelter.jpg') }}"
-                                    alt=""
+                                <img src="{{ asset('/img/trails/legacy-trail/trail-shelter.jpg') }}" alt=""
                                     class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                         </div>
@@ -303,7 +299,8 @@
                 <div
                     class="mx-auto mt-16 grid grid-cols-1 gap-x-4 md:gap-x-6 gap-y-4 md:gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
                     @foreach ($trailheads as $trailhead)
-                        <article class="flex flex-col items-start dark:bg-gray-800 rounded-lg overflow-hidden">
+                        <article
+                            class="flex flex-col items-start dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow">
                             <div class="aspect-video w-full">
                                 <iframe class="w-full h-full"
                                     src="https://www.youtube.com/embed/{{ $trailhead['video_id'] }}" frameborder="0"
