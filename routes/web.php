@@ -30,7 +30,7 @@ Route::get('/trails/legacy-trail', function () {
 })->name('trails.legacy-trail');
 
 Route::get('/sitemap', function () {
-    return Redirect::to('sitemap.xml');
+    return Redirect::to(asset('/sitemap.xml'));
 })->name('sitemap');
 
 // Route::get('/contact-us', function () {
