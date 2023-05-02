@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,10 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::get('/trails/legacy-trail', function () {
     return view('pages.trails.legacy');
 })->name('trails.legacy-trail');
+
+Route::get('/sitemap', function () {
+    return Redirect::to('sitemap.xml');
+})->name('sitemap');
 
 // Route::get('/contact-us', function () {
 //     return view('pages.contact');
