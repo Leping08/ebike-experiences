@@ -10,7 +10,8 @@
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "laravel/vapor-core": "^2.29"
+        "laravel/vapor-core": "^2.29",
+        "spatie/laravel-sitemap": "^6.3"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
