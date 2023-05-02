@@ -262,14 +262,14 @@
                                 <div class="flex flex-col-reverse gap-y-4">
                                     <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Miles of trails
                                     </dt>
-                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">20
+                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">20+
                                     </dd>
                                 </div>
 
                                 <div class="flex flex-col-reverse gap-y-4">
                                     <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Users every year</dt>
                                     <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
-                                        600,000
+                                        650,000+
                                     </dd>
                                 </div>
 
