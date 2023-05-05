@@ -11,8 +11,8 @@
         $trailheads = [
             [
                 'title' => 'Payne Park',
-                'video_id' => 'fh_F9yEEae8',
-                'description' => 'The Ashton Trailhead is located at the intersection of Ashton Road and...',
+                'video_id' => '-BbcZSgGB_k',
+                'description' => 'Ride from Payne Park to Bayfront Park',
                 'parking' => true,
                 'water' => true,
                 'bathrooms' => true,
@@ -23,8 +23,8 @@
             ],
             [
                 'title' => 'Bayfront Park',
-                'video_id' => 'AS0TZPD80fQ',
-                'description' => 'The Culverhouse Park Trailhead is located at the intersection of...',
+                'video_id' => 'l_o7nBhViRQ',
+                'description' => 'Ride from Bayfront Park to Payne Park',
                 'parking' => true,
                 'water' => true,
                 'bathrooms' => true,
@@ -34,7 +34,7 @@
                 ],
             ],
         ];
-
+        
         $mapPath = [
             ['lat' => 27.33431630621581, 'lng' => -82.52828108676111],
             ['lat' => 27.335597606440434, 'lng' => -82.52825761748758],
@@ -55,7 +55,7 @@
             ['lat' => 27.332379733702485, 'lng' => -82.54341612151882],
             ['lat' => 27.33192462531072, 'lng' => -82.54383186392559],
         ];
-
+        
         $mapCenter = [
             'lat' => 27.332954573444702,
             'lng' => -82.53637867557983,
@@ -130,79 +130,58 @@
             </div>
         </div>
 
-        <div class="overflow-hidden bg-white dark:bg-gray-800 pb-32 pt-12">
-            <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
-                <div
-                    class="mx-auto grid max-w-4xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
-                    <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">The
-                            Gateway to the Beaches
+
+        <div class="bg-white dark:bg-gray-800 pb-32 pt-12">
+            <div class="flex items-center mx-auto max-w-7xl">
+                <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
+                    <div class="w-full lg:shrink-0">
+                        <h2 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-3xl">Gateway
+                            to
+                            the Beaches
                         </h2>
-                        <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">One of the most enjoyable Ebike
+                        <p
+                            class="relative mt-6 md:pr-10 sm:pr-0 text-lg text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
+                            One of the most enjoyable Ebike
                             trails in Sarasota, FL, takes riders on a scenic journey from Payne Park to Bayfront Park. This
                             route winds through some of the most picturesque areas in the city, offering riders stunning
                             views of the natural beauty that surrounds them.</p>
-                        <div class="mt-10 flex">
+                        <div class="mt-10 flex items-center gap-x-6">
                             <a href="#map"
                                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
                                 Map</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        {{-- <div class="bg-gray-100 dark:bg-gray-900">
-            <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
-                <div class="mx-auto max-w-4xl lg:mx-0 lg:max-w-none">
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">History</h2>
-                    <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-                        <div class="lg:w-full lg:max-w-4xl lg:flex-auto">
-                            <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 dark:text-gray-300">
-                                <p>The Legacy Trail is a 20 mile trail in Sarasota County that follows the scenic CSX
-                                    railroad
-                                    corridor, offering opportunities for recreation, historical discovery, and environmental
-                                    appreciation. The restored Venice Train Depot serves as a historical resource and
-                                    regional
-                                    transportation hub. In 2018, voters approved a bond referendum to extend the Legacy
-                                    Trail an
-                                    additional 7.5 miles north to Payne Park in downtown Sarasota with a connector to the
-                                    City
-                                    of North Port. The grade level trail part of this extension was completed in 2022, with
-                                    overpasses at Clark and Bee Ridge Roads expected to be finished by FDOT in 2024. The
-                                    Venice
-                                    Area Historical Society provides more information on the Venice Train Depot and the
-                                    Legacy
-                                    Trail corridor.</p>
-                            </div>
+                <div class="gap-8 w-1/2 hidden lg:flex">
+                    <div class="mt-20 w-44">
+                        <div class="mt-8">
+                            <img src="{{ asset('img/trails/gateway-to-the-beaches/bayfront-park.jpg') }}" alt="Bike image"
+                                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                         </div>
-                        <div class="lg:flex lg:flex-auto lg:justify-center">
-                            <dl class="w-64 space-y-8 xl:w-80">
-                                <div class="flex flex-col-reverse gap-y-4">
-                                    <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Miles of trails
-                                    </dt>
-                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">20+
-                                    </dd>
-                                </div>
-
-                                <div class="flex flex-col-reverse gap-y-4">
-                                    <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Users every year</dt>
-                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
-                                        650,000+
-                                    </dd>
-                                </div>
-
-                                <div class="flex flex-col-reverse gap-y-4">
-                                    <dt class="text-base leading-7 text-gray-600 dark:text-gray-400"></dt>
-                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
-                                    </dd>
-                                </div>
-                            </dl>
+                        <div class="mt-8">
+                            <img src="{{ asset('/img/trails/gateway-to-the-beaches/payne-park-sign.jpg') }}"
+                                alt="Bike image" class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                        </div>
+                    </div>
+                    <div class="mt-10 w-44">
+                        <div class="mt-8">
+                            <img src="{{ asset('img/trails/gateway-to-the-beaches/bayfront-sign.png') }}" alt="Bike image"
+                                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                        </div>
+                        <div class="mt-8">
+                            <img src="{{ asset('img/trails/gateway-to-the-beaches/payne-park-main.jpg') }}" alt="Bike image"
+                                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                        </div>
+                    </div>
+                    <div class="mt-40 w-44">
+                        <div class="mt-8">
+                            <img src="{{ asset('img/trails/gateway-to-the-beaches/bayfront-entrance.jpg') }}"
+                                alt="Bike image" class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                         </div>
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
 
         <div id="map" class="w-full">
             <trail-map api-key="{{ config('map.api_key') }}" :trail-heads="{{ json_encode($trailheads) }}"
@@ -213,7 +192,7 @@
             <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">Trailheads</h2>
                 <div class="mx-auto lg:mx-0 lg:max-w-none dark:text-gray-300 text-gray-700 mt-4">
-                    Looking to explore the Legacy Trail? Check out our list of trailheads along the way!
+                    Explore the becahes of Bayfront park and take a rite to the start of the Legacy Trail at Payne Park.
                 </div>
 
                 <div

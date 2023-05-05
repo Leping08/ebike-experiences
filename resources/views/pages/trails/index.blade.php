@@ -16,7 +16,7 @@
                     [
                         'name' => 'Legacy Trail',
                         'route' => route('trails.legacy-trail'),
-                        'image' => 'https://upload.wikimedia.org/wikipedia/commons/4/46/Legacy_Trail_South_Terminus_at_Venice.jpg',
+                        'image' => asset('img/trails/legacy-trail/south-terminus-venice.jpg'),
                         'description' => 'Where every mile tells a story of history, culture, and conservation.',
                         'length' => '10.6 miles',
                         'icon' => 'road',
@@ -25,7 +25,7 @@
                     [
                         'name' => 'Gateway to the beaches',
                         'route' => route('trails.gateway-to-the-beaches'),
-                        'image' => 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda',
+                        'image' => asset('img/trails/gateway-to-the-beaches/bayfront-park.jpg'),
                         'description' => 'Ride from the legacy trail to the beaches.',
                         'length' => '2 miles',
                         'icon' => 'umbrella-beach',
