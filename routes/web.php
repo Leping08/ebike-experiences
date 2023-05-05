@@ -25,9 +25,13 @@ Route::get('/trails', function () {
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
-Route::get('/trails/legacy-trail', function () {
-    return view('pages.trails.legacy');
+Route::get('/trails/sarasota/legacy-trail', function () {
+    return view('pages.trails.sarasota.legacy');
 })->name('trails.legacy-trail');
+
+Route::get('/trails/sarasota/gateway-to-the-beaches', function () {
+    return view('pages.trails.sarasota.gateway-to-the-beaches');
+})->name('trails.gateway-to-the-beaches');
 
 Route::get('/sitemap', function () {
     return Redirect::to(asset('/sitemap.xml'));

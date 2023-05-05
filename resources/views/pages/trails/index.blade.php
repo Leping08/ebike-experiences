@@ -24,12 +24,12 @@
                     ],
                     [
                         'name' => 'Gateway to the beaches',
-                        'route' => null,
+                        'route' => route('trails.gateway-to-the-beaches'),
                         'image' => 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda',
                         'description' => 'Ride from the legacy trail to the beaches.',
-                        'length' => '10.6 miles',
+                        'length' => '2 miles',
                         'icon' => 'umbrella-beach',
-                        'coming_soon' => true,
+                        'coming_soon' => false,
                     ],
                     [
                         'name' => 'The Ringling Bridge',

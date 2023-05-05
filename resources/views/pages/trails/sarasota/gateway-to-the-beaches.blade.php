@@ -11,90 +11,34 @@
     @php
         $trailheads = [
             [
-                'title' => 'Ashton Trailhead',
+                'title' => 'Payne Park',
                 'video_id' => 'fh_F9yEEae8',
                 'description' => 'The Ashton Trailhead is located at the intersection of Ashton Road and...',
                 'parking' => true,
                 'water' => true,
-                'bathrooms' => false,
+                'bathrooms' => true,
                 'position' => [
-                    'lat' => 27.276596,
-                    'lng' => -82.482037,
+                    'lat' => 27.334327028456563,
+                    'lng' => -82.52827840457272,
                 ],
             ],
             [
-                'title' => 'Culverhouse Park',
+                'title' => 'Bayfront Park',
                 'video_id' => 'AS0TZPD80fQ',
                 'description' => 'The Culverhouse Park Trailhead is located at the intersection of...',
                 'parking' => true,
-                'water' => false,
-                'bathrooms' => false,
-                'position' => [
-                    'lat' => 27.249038,
-                    'lng' => -82.475492,
-                ],
-            ],
-            [
-                'title' => 'Payne Park',
-                'video_id' => 'O9CH-13SlTc',
-                'description' => 'The Payne Park Trailhead is located at the intersection of...',
-                'parking' => true,
-                'water' => true,
-                'bathrooms' => false,
-                'position' => [
-                    'lat' => 27.333336,
-                    'lng' => -82.525669,
-                ],
-            ],
-            [
-                'title' => 'McIntosh Trailhead',
-                'video_id' => 'KC8oYgzlP4Y',
-                'description' => 'The McIntosh Trailhead is located at the intersection of...',
-                'parking' => false,
                 'water' => true,
                 'bathrooms' => true,
                 'position' => [
-                    'lat' => 27.23801281032138,
-                    'lng' => -82.47583695874043,
-                ],
-            ],
-            [
-                'title' => 'Sarasota Springs Trailhead',
-                'video_id' => 'h4qiMONesNo',
-                'description' => 'The Sarasota Springs Trailhead is located at the intersection of...',
-                'parking' => false,
-                'water' => true,
-                'bathrooms' => true,
-                'position' => [
-                    'lat' => 27.307427883724124,
-                    'lng' => -82.48890062035929,
-                ],
-            ],
-            [
-                'title' => 'Pompano Trailhead',
-                'video_id' => '2bhBa_nUe28',
-                'description' => 'The Pompano Trailhead is located at the intersection of...',
-                'parking' => true,
-                'water' => true,
-                'bathrooms' => true,
-                'position' => [
-                    'lat' => 27.33087768815836,
-                    'lng' => -82.5076394973437,
-                ],
-            ],
-            [
-                'title' => 'Osprey Junction Trailhead',
-                'video_id' => 'fGmrP8C8fJU',
-                'description' => 'The Pompano Trailhead is located at the intersection of...',
-                'parking' => true,
-                'water' => true,
-                'bathrooms' => false,
-                'position' => [
-                    'lat' => 27.196500393592462,
-                    'lng' => -82.46381693586189,
+                    'lat' => 27.331401010115307,
+                    'lng' => -82.54427509870735,
                 ],
             ],
         ];
+        
+        $mapPath = [];
+        
+        $mapCenter = [];
     @endphp
 
 
@@ -171,69 +115,23 @@
                     class="mx-auto grid max-w-4xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
                     <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">The
-                            Legacy
-                            Trail
+                            Gateway to the Beaches
                         </h2>
                         <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">The Legacy Trail is a popular
                             multi-use trail located in Sarasota County, Florida. It is a paved trail that is open to
                             cyclists,
                             walkers, runners, and inline skaters, and is approximately 20 miles long.</p>
-                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">The trail starts at the
-                            southern
-                            end
-                            in Sarasota at the historic train station on McIntosh Road and extends to Venice, Florida. The
-                            trail
-                            winds through scenic landscapes of natural beauty, including wetlands, parks, and wildlife
-                            areas.
-                        </p>
-                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">Along the way, visitors can
-                            explore
-                            various communities and attractions, including the Oscar Scherer State Park, the Historic Venice
-                            Train Depot, and the Venice Museum and Archives. The trail is also close to various dining and
-                            shopping options, making it a great destination for a day trip or weekend getaway.
-                        </p>
-                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">The Legacy Trail is
-                            well-maintained
-                            and offers rest areas, benches, and water fountains along the way. Additionally, the trail has
-                            several trailheads and parking areas, making it easily accessible to visitors.
-                        </p>
-                        <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">Overall, The Legacy Trail is a
-                            popular and scenic destination for outdoor enthusiasts, and is highly recommended for anyone
-                            looking
-                            to explore the natural beauty of Sarasota County while getting some exercise.
-                        </p>
                         <div class="mt-10 flex">
                             <a href="#map"
                                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
                                 Map</a>
                         </div>
                     </div>
-                    <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
-                        <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <img src="{{ asset('/img/trails/legacy-trail/trail-first-photo.jpg') }}" alt=""
-                                class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
-                        </div>
-                        <div
-                            class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-                            <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-terminus-venice.jpg') }}" alt=""
-                                    class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
-                            </div>
-                            <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-creek.jpg') }}" alt=""
-                                    class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
-                            </div>
-                            <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/trail-shelter.jpg') }}" alt=""
-                                    class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-gray-100 dark:bg-gray-900">
+        {{-- <div class="bg-gray-100 dark:bg-gray-900">
             <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
                 <div class="mx-auto max-w-4xl lg:mx-0 lg:max-w-none">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">History</h2>
@@ -283,7 +181,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div id="map" class="w-full">
             <trail-map api-key="{{ config('map.api_key') }}" :trail-heads="{{ json_encode($trailheads) }}" />
