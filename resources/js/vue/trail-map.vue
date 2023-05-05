@@ -1,5 +1,5 @@
 <template>
-    <GoogleMap :api-key="apiKey" style="width: 100%; height: 500px" :center="center" :zoom="11">
+    <GoogleMap :api-key="apiKey" style="width: 100%; height: 500px" :center="center" :zoom="zoom">
         <template v-for="(trailHead, index) in trailHeads" :key="index">
             <Marker :options="trailHead">
                 <InfoWindow>
@@ -67,71 +67,36 @@ import { defineProps } from "vue";
 import { GoogleMap, Marker, Polyline, InfoWindow } from "vue3-google-map";
 
 // https://vue3-google-map.netlify.app/components/polyline.html
-defineProps({
+const props = defineProps({
     apiKey: {
+        required: true,
         type: String,
         default: ''
     },
-    trailHeads: {
+    center: {
+        required: false,
         type: Array,
         default: []
     },
+    trailHeads: {
+        required: false,
+        type: Array,
+        default: []
+    },
+    path: {
+        required: false,
+        type: Array,
+        default: []
+    },
+    zoom: {
+        required: false,
+        type: Number,
+        default: 11
+    }
 });
 
-const center = {
-    lat: 27.276596,
-    lng: -82.482037
-};
-
-// @todo add to DB at some point
-const trailCords = [
-    { lat: 27.101446, lng: -82.440600 },
-    { lat: 27.108499, lng: -82.442102 },
-    { lat: 27.108844, lng: -82.442280 },
-    { lat: 27.115868, lng: -82.443885 },
-    { lat: 27.119308, lng: -82.444694 },
-    { lat: 27.122920, lng: -82.445550 },
-    { lat: 27.126883, lng: -82.446486 },
-    { lat: 27.136056, lng: -82.448674 },
-    { lat: 27.138387, lng: -82.449231 },
-    { lat: 27.149419, lng: -82.451862 },
-    { lat: 27.168009, lng: -82.456252 },
-    { lat: 27.176485, lng: -82.458264 },
-    { lat: 27.196202, lng: -82.462974 },
-    { lat: 27.225339, lng: -82.469866 },
-    { lat: 27.237929, lng: -82.472868 },
-    { lat: 27.244429, lng: -82.474494 },
-    { lat: 27.249038, lng: -82.475492 },
-    { lat: 27.259192, lng: -82.477905 },
-    { lat: 27.269217, lng: -82.480282 },
-    { lat: 27.276596, lng: -82.482037 },
-    { lat: 27.280306, lng: -82.482914 },
-    { lat: 27.283968, lng: -82.483778 },
-    { lat: 27.291487, lng: -82.485580 },
-    { lat: 27.298756, lng: -82.487307 },
-    { lat: 27.308272, lng: -82.489552 },
-    { lat: 27.322937, lng: -82.493041 }, // end of second curve
-    { lat: 27.327992, lng: -82.494254 },
-    { lat: 27.328678, lng: -82.494517 },
-    { lat: 27.329231, lng: -82.494941 },
-    { lat: 27.329545, lng: -82.495348 },
-    { lat: 27.329836, lng: -82.495853 },
-    { lat: 27.330041, lng: -82.496518 },
-    { lat: 27.330097, lng: -82.497548 }, // start of second curve
-    { lat: 27.330135, lng: -82.507816 },
-    { lat: 27.330126, lng: -82.514052 },
-    { lat: 27.330128, lng: -82.522282 }, // end of the first curve
-    { lat: 27.330348, lng: -82.523491 },
-    { lat: 27.330849, lng: -82.524392 },
-    { lat: 27.331421, lng: -82.525095 },
-    { lat: 27.331897, lng: -82.525417 },
-    { lat: 27.332550, lng: -82.525632 },
-    { lat: 27.333336, lng: -82.525669 }, // start of first curve
-    { lat: 27.337437, lng: -82.525629 }
-];
-
 const trailOptions = {
-    path: trailCords,
+    path: props.path,
     geodesic: true,
     strokeColor: '#6366F1',
     strokeOpacity: 0.75,
