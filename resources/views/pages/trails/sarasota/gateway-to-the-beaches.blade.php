@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Explore the Legacy Trail on EBikes')
+@section('title', 'The Gateway to the Beaches')
 
 @section('description',
-    'Discover the beauty of the Legacy Trail with our premium selection of EBikes. Rent or buy your
-    perfect ride and explore the scenic trail like never before. Book your test ride now and experience the joy of
-    effortless cycling on the Legacy Trail.')
+    'Explore the beautiful becahes of Sarasota, from Payne Park to
+    Bayfront Park. Enjoy the atmosphere of Downtown Sarasota with a unique Ebike experience.')
 
 @section('content')
     @php
@@ -35,9 +34,9 @@
                 ],
             ],
         ];
-        
+
         $mapPath = [];
-        
+
         $mapCenter = [];
     @endphp
 
@@ -99,9 +98,9 @@
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <a href="{{ route('trails.legacy-trail') }}"
+                                <a href="{{ route('trails.gateway-to-the-beaches') }}"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
-                                    aria-current="page">The Legacy Trail</a>
+                                    aria-current="page">The Gateway to the Beaches</a>
                             </div>
                         </li>
                     </ol>
@@ -117,10 +116,10 @@
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">The
                             Gateway to the Beaches
                         </h2>
-                        <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">The Legacy Trail is a popular
-                            multi-use trail located in Sarasota County, Florida. It is a paved trail that is open to
-                            cyclists,
-                            walkers, runners, and inline skaters, and is approximately 20 miles long.</p>
+                        <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">One of the most enjoyable Ebike
+                            trails in Sarasota, FL, takes riders on a scenic journey from Payne Park to Bayfront Park. This
+                            route winds through some of the most picturesque areas in the city, offering riders stunning
+                            views of the natural beauty that surrounds them.</p>
                         <div class="mt-10 flex">
                             <a href="#map"
                                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
