@@ -95,7 +95,7 @@
                 ],
             ],
         ];
-        
+
         $mapPath = [
             ['lat' => 27.101446, 'lng' => -82.4406],
             ['lat' => 27.108499, 'lng' => -82.442102],
@@ -141,7 +141,7 @@
             ['lat' => 27.333336, 'lng' => -82.525669], // start of first curve
             ['lat' => 27.337437, 'lng' => -82.525629],
         ];
-        
+
         $mapCenter = [
             'lat' => 27.276596,
             'lng' => -82.482037,
@@ -424,7 +424,7 @@
         </div>
 
         <div>
-            <iframe class="h-screen w-full"
+            <iframe class="h-screen-80 w-full"
                 src="https://www.custompromotionsinc.com/flipbooks/LegacyTrail/index.html"></iframe>
         </div>
 

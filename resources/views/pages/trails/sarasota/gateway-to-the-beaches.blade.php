@@ -34,7 +34,7 @@
                 ],
             ],
         ];
-        
+
         $mapPath = [
             ['lat' => 27.33431630621581, 'lng' => -82.52828108676111],
             ['lat' => 27.335597606440434, 'lng' => -82.52825761748758],
@@ -55,7 +55,7 @@
             ['lat' => 27.332379733702485, 'lng' => -82.54341612151882],
             ['lat' => 27.33192462531072, 'lng' => -82.54383186392559],
         ];
-        
+
         $mapCenter = [
             'lat' => 27.332954573444702,
             'lng' => -82.53637867557983,
@@ -271,7 +271,7 @@
         </div>
 
         <div>
-            <iframe class="h-screen w-full"
+            <iframe class="h-screen-80 w-full"
                 src="https://www.custompromotionsinc.com/flipbooks/LegacyTrail/index.html"></iframe>
         </div>
 
