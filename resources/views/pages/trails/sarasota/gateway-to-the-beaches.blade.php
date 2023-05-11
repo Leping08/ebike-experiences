@@ -142,7 +142,7 @@
                         <p
                             class="relative mt-6 md:pr-10 sm:pr-0 text-lg text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
                             One of the most enjoyable Ebike
-                            trails in Sarasota, FL, takes riders on a scenic journey from Payne Park to Bayfront Park. This
+                            routes in Sarasota, FL, takes riders on a scenic journey from Payne Park to Bayfront Park. This
                             route winds through some of the most picturesque areas in the city, offering riders stunning
                             views of the natural beauty that surrounds them.</p>
                         <div class="mt-10 flex items-center gap-x-6">

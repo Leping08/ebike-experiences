@@ -230,9 +230,9 @@
                             cyclists,
                             walkers, runners, and inline skaters, and is approximately 20 miles long.</p>
                         <p class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">The trail starts at the
-                            southern
+                            northern
                             end
-                            in Sarasota at the historic train station on McIntosh Road and extends to Venice, Florida. The
+                            in Sarasota and extends to the historic Venice Train Depot in Venice. The
                             trail
                             winds through scenic landscapes of natural beauty, including wetlands, parks, and wildlife
                             areas.
