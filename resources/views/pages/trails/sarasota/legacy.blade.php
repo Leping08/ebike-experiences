@@ -355,7 +355,8 @@
                             class="flex flex-col items-start dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow">
                             <div class="aspect-video w-full">
                                 <iframe class="w-full h-full"
-                                    src="https://www.youtube.com/embed/{{ $trailhead['video_id'] }}" frameborder="0"
+                                    src="https://www.youtube.com/embed/{{ $trailhead['video_id'] }}?controls=1&playlist={{ $trailhead['video_id'] }}&loop=1"
+                                    frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen>
                                 </iframe>
