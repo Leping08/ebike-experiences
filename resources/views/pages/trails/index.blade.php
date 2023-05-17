@@ -35,7 +35,7 @@
                         'name' => 'The Ringling Bridge',
                         'route' => null,
                         'image' => 'https://assets.site-static.com/userFiles/547/image/DowntownSarasotaSmall.jpg',
-                        'description' => 'Corss the iconic Ringling Bridge.',
+                        'description' => 'Cross the iconic Ringling Bridge.',
                         'length' => '1.5 miles',
                         'icon' => 'bridge',
                         'coming_soon' => true,
