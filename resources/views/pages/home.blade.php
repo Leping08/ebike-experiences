@@ -1,18 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'EBikes Florida')
+@section('title', 'EBikes Experiences | Online Hub for Electric Bike Trails in Florida')
 
 @section('description',
-    'Explore the benefits of electric bikes in Florida. Our site provides information and resources
-    to help you make the switch to eco-friendly transportation. Learn about the latest e-bike models, regulations, and best
-    practices for safe riding in the Sunshine State.')
+    'Discover the electrifying world of EBikes! Unforgettable trails, maintenance tips, and eco-friendly adventure await.
+     Experience the EBike difference today!')
 
 @section('content')
-    {{-- @todo make this work in dark mode --}}
     <main class="bg-white dark:bg-gray-800">
-        {{-- <div class="w-full">
-        <iframe class="h-96 w-2/3" src="http://custompromotionsinc.com/flipbooks/LaboratoryMillWithPrices/"></iframe>
-        </div> --}}
         <div class="mx-auto container flex px-6 pb-32 pt-20 sm:pt-60 lg:px-8 lg:pt-32">
             <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl md:max-w-full">
@@ -21,21 +16,20 @@
                     </h1>
                     <p
                         class="relative mt-6 md:pr-10 sm:pr-0 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
-                        Welcome to our website dedicated to all things e-bike! If you're looking for a thrilling and
+                        Welcome to our website dedicated to all things EBike! If you're looking for a thrilling and
                         eco-friendly way to explore the outdoors, you've come to the right place.
 
-                        Our site is a hub for e-bike enthusiasts, featuring firsthand accounts of unforgettable rides,
+                        Our site is a hub for EBike enthusiasts, featuring firsthand accounts of unforgettable rides,
                         and helpful tips for maintaining and optimizing your own
-                        e-bike.
+                        EBike.
 
                         So buckle up (or should we say, pedal up?) and get ready for an electrifying journey through the
-                        world of e-bike experiences!</p>
+                        world of EBike experiences!</p>
                     <div class="mt-10 flex items-center gap-x-6">
                         <a href="{{ route('trails.index') }}"
+                            title="Florida EBike Trails"
                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Find
                             a trail</a>
-                        {{-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300">Live demo
-                            <span aria-hidden="true">→</span></a> --}}
                     </div>
                 </div>
             </div>
@@ -62,7 +56,7 @@
                 </div>
                 <div class="mt-40 w-44">
                     <div class="mt-8">
-                        <img src="{{ asset('/img/bikes/blue-bike.jpg') }}" alt="Bike image"
+                        <img src="{{ asset('/img/bikes/bluEBike.jpg') }}" alt="Bike image"
                             class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
@@ -128,6 +122,7 @@
 
                                     <div class="mt-10 flex items-center gap-x-6">
                                         <a href="{{ route('trails.legacy-trail') }}"
+                                            title="The Legacy Trail Sarasota"
                                             class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">More
                                             Info</a>
                                     </div>
@@ -137,7 +132,7 @@
                         </div>
                         <div class="flex items-start justify-end lg:order-first">
                             <img src="{{ asset('/img/trails/legacy-trail/trail-lights.jpg') }}" alt="The Legacy Trail"
-                                class="w-full rounded-xl shadow-xl">
+                                title="EBike Trail Sarasota" class="w-full rounded-xl shadow-xl">
                         </div>
                     </div>
                 </div>

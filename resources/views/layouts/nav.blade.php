@@ -2,10 +2,12 @@
     $links = [
         [
             'text' => 'Home',
+            'title' => 'Florida EBike Experiences',
             'link' => route('home'),
         ],
         [
             'text' => 'Trails',
+            'title' => 'Florida EBike Trails',
             'link' => route('trails.index'),
         ],
     ];

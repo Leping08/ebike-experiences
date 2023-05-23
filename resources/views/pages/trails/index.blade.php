@@ -1,11 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'EBikes Florida')
+@section('title', 'Florida EBike Trails | Top Places to Ride Electric Bikes')
 
-@section('description',
-    'Explore the benefits of electric bikes in Florida. Our site provides information and resources
-    to help you make the switch to eco-friendly transportation. Learn about the latest e-bike models, regulations, and best
-    practices for safe riding in the Sunshine State.')
+@section('description', "Explore Florida's best EBike trails for thrilling rides. Discover scenic routes, breathtaking views, and unforgettable adventures on two wheels in the Sarasota surrounding areas.")
 
 @section('content')
     @php
@@ -88,12 +85,13 @@
                         class="mx-auto mt-8 mb-16 grid grid-cols-1 gap-x-4 md:gap-x-6 gap-y-4 md:gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
                         @foreach ($cityWithTrails['trails'] as $trail)
                             <div>
-                                <a href="{{ $trail['route'] ? $trail['route'] : '#' }}">
+                                <a href="{{ $trail['route'] ? $trail['route'] : '#' }}" title="{{ $trail['name'] }} EBike Trail">
                                     <div
                                         class="flex flex-col items-start dark:bg-gray-900 bg-white rounded-lg overflow-hidden shadow">
                                         <div class="relative">
                                             <img class="aspect-[3/2] w-full object-cover" src="{{ $trail['image'] }}"
-                                                alt="">
+                                                title="{{ $trail['name'] }} EBike Trail"
+                                                alt="{{ $trail['name'] }}">
                                             @if ($trail['coming_soon'])
                                                 <div
                                                     class="absolute top-0 right-0 w-32 h-32 bg-indigo-800 text-white text-center leading-10 triangle">

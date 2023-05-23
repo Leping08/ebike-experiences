@@ -1,11 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Explore the Legacy Trail on EBikes')
+@section('title', 'Multi-Use Legacy Trail | Paved EBike Trails in Sarasota, Florida')
 
-@section('description',
-    'Discover the beauty of the Legacy Trail with our premium selection of EBikes. Rent or buy your
-    perfect ride and explore the scenic trail like never before. Book your test ride now and experience the joy of
-    effortless cycling on the Legacy Trail.')
+@section('description', 'Discover the natural beauty of Sarasota County on The Legacy Trail. Explore scenic landscapes, wildlife areas, and attractions on an exhilarating EBike ride!')
 
 @section('content')
     @php
@@ -159,6 +156,7 @@
                         <li>
                             <div>
                                 <a href="{{ route('home') }}"
+                                    title="Florida EBike Experiences">
                                     class="dark:text-gray-300 dark:hover:text-gray-500 text-gray-700  hover:text-gray-500">
                                     <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
@@ -180,6 +178,7 @@
                                         clip-rule="evenodd" />
                                 </svg>
                                 <a href="{{ route('trails.index') }}"
+                                    title="Florida Electric Bike Trails"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500">Trails</a>
                             </div>
                         </li>
@@ -193,8 +192,9 @@
                                         clip-rule="evenodd" />
                                 </svg>
                                 <a href="#"
+                                    title="Sarasota Bike Trails"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
-                                    aria-current="page">Sarsaota</a>
+                                    aria-current="page">Sarasota</a>
                             </div>
                         </li>
 
@@ -207,6 +207,7 @@
                                         clip-rule="evenodd" />
                                 </svg>
                                 <a href="{{ route('trails.legacy-trail') }}"
+                                    title="The Legacy Trail Sarasota"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
                                     aria-current="page">The Legacy Trail</a>
                             </div>
@@ -255,27 +256,36 @@
                         </p>
                         <div class="mt-10 flex">
                             <a href="#map"
+                                title="View the Legacy Trail Map"
                                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
                                 Map</a>
                         </div>
                     </div>
                     <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                         <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <img src="{{ asset('/img/trails/legacy-trail/trail-first-photo.jpg') }}" alt=""
+                            <img src="{{ asset('/img/trails/legacy-trail/trail-first-photo.jpg') }}"
+                                alt="Sarasota Legacy Trail"
+                                title="The Legacy Trail in Sarasota, Florida"
                                 class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                         </div>
                         <div
                             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
                             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-terminus-venice.jpg') }}" alt=""
+                                <img src="{{ asset('/img/trails/legacy-trail/south-terminus-venice.jpg') }}"
+                                    alt="Legacy Trail Venice, Florida"
+                                    title="Venice EBike Trail"
                                     class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-creek.jpg') }}" alt=""
+                                <img src="{{ asset('/img/trails/legacy-trail/south-creek.jpg') }}"
+                                    alt="South Creek Legacy Trail"
+                                    title="Electric Bike Trail Sarasota"
                                     class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/trail-shelter.jpg') }}" alt=""
+                                <img src="{{ asset('/img/trails/legacy-trail/trail-shelter.jpg') }}"
+                                    alt="Legacy Trail Shelter"
+                                    title="Sarasota EBike Trails"
                                     class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                         </div>
@@ -365,10 +375,8 @@
                                 <div class="group relative">
                                     <div class="flex items-center justify-between mt-2">
                                         <h3 class="text-2xl font-semibold leading-6 text-gray-900 dark:text-gray-100">
-                                            <a href="#">
-                                                <span class="absolute inset-0"></span>
-                                                {{ $trailhead['title'] }}
-                                            </a>
+                                            <span class="absolute inset-0"></span>
+                                            {{ $trailhead['title'] }}
                                         </h3>
                                         <div class="flex">
                                             @if ($trailhead['bathrooms'])

@@ -2,10 +2,12 @@
     $links = [
         [
             'text' => 'Home',
+            'title' => 'Florida EBike Experiences',
             'link' => route('home'),
         ],
         [
             'text' => 'Trails',
+            'title' => 'Florida EBike Trails',
             'link' => route('trails.index'),
         ],
     ];
@@ -17,6 +19,7 @@
             @foreach ($links as $item)
                 <div>
                     <a href="{{ $item['link'] }}"
+                        title="{{ $item['title'] }}"
                         class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">{{ $item['text'] }}</a>
                 </div>
             @endforeach
