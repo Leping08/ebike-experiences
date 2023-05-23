@@ -156,7 +156,7 @@
                         <li>
                             <div>
                                 <a href="{{ route('home') }}"
-                                    title="Florida EBike Experiences">
+                                    title="Florida EBike Experiences"
                                     class="dark:text-gray-300 dark:hover:text-gray-500 text-gray-700  hover:text-gray-500">
                                     <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">

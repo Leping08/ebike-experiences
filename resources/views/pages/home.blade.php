@@ -56,7 +56,7 @@
                 </div>
                 <div class="mt-40 w-44">
                     <div class="mt-8">
-                        <img src="{{ asset('/img/bikes/bluEBike.jpg') }}" alt="Bike image"
+                        <img src="{{ asset('/img/bikes/blue-bike.jpg') }}" alt="Bike image"
                             class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
