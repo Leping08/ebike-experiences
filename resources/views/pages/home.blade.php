@@ -16,15 +16,11 @@
                     </h1>
                     <p
                         class="relative mt-6 md:pr-10 sm:pr-0 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
-                        Welcome to our website dedicated to all things EBike! If you're looking for a thrilling and
-                        eco-friendly way to explore the outdoors, you've come to the right place.
+                        Welcome to our website dedicated to all things E Bike. If you are looking for a thrilling and eco-friendly way to explore the outdoors you have come to the right place.
 
-                        Our site is a hub for EBike enthusiasts, featuring firsthand accounts of unforgettable rides,
-                        and helpful tips for maintaining and optimizing your own
-                        EBike.
+                        Our site is a hub for E Bike enthusiasts that share unforgettable ride experiences. So get ready for your E Bike ride that will propel you through a mix of nature and a paradise of rural delights.
 
-                        So buckle up (or should we say, pedal up?) and get ready for an electrifying journey through the
-                        world of EBike experiences!</p>
+                        The sights, sounds and fresh air that combine with physical activity will leave you ever searching to expand your journey!</p>
                     <div class="mt-10 flex items-center gap-x-6">
                         <a href="{{ route('trails.index') }}"
                             title="Florida EBike Trails"

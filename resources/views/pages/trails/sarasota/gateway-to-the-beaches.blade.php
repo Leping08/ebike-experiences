@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'The Gateway to the Beaches')
+@section('title', 'Gateway to the Waterfront and the Legacy Trail')
 
-@section('description', 'One of the most enjoyable EBike routes in Sarasota, FL; this EBike trail takes riders on a scenic journey from Payne Park to Bayfront Park.')
+@section('description',
+    'Experience the dedicated bike path through the downtown area. The path is well marked and
+    includes many safety features to guide you through the streets of Sarasota.')
 
 @section('content')
     @php
@@ -10,7 +12,7 @@
             [
                 'title' => 'Payne Park',
                 'video_id' => '-BbcZSgGB_k',
-                'description' => 'Ride from Payne Park to Bayfront Park',
+                'description' => 'Ride from the Legacy Trail to the Bayfront Park.',
                 'parking' => true,
                 'water' => true,
                 'bathrooms' => true,
@@ -22,7 +24,7 @@
             [
                 'title' => 'Bayfront Park',
                 'video_id' => 'l_o7nBhViRQ',
-                'description' => 'Ride from Bayfront Park to Payne Park',
+                'description' => 'Ride from the Bayfront Park to the Legacy Trail',
                 'parking' => true,
                 'water' => true,
                 'bathrooms' => true,
@@ -70,8 +72,7 @@
                     <ol role="list" class="flex items-center space-x-4">
                         <li>
                             <div>
-                                <a href="{{ route('home') }}"
-                                    title="Florida EBike Experiences"
+                                <a href="{{ route('home') }}" title="Florida EBike Experiences"
                                     class="dark:text-gray-300 dark:hover:text-gray-500 text-gray-700  hover:text-gray-500">
                                     <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
@@ -92,8 +93,7 @@
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <a href="{{ route('trails.index') }}"
-                                    title="Florida Electric Bike Trails"
+                                <a href="{{ route('trails.index') }}" title="Florida Electric Bike Trails"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500">Trails</a>
                             </div>
                         </li>
@@ -106,8 +106,7 @@
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <a href="#"
-                                    title="Sarasota Bike Trails"
+                                <a href="#" title="Sarasota Bike Trails"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
                                     aria-current="page">Sarasota</a>
                             </div>
@@ -122,9 +121,9 @@
                                         clip-rule="evenodd" />
                                 </svg>
                                 <a href="{{ route('trails.gateway-to-the-beaches') }}"
-                                    title="Gateway to the Beaches"
+                                    title="The Gateway to the Waterfront and the Legacy Trail"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
-                                    aria-current="page">The Gateway to the Beaches</a>
+                                    aria-current="page">The Gateway to the Waterfront and the Legacy Trail</a>
                             </div>
                         </li>
                     </ol>
@@ -148,8 +147,7 @@
                             route winds through some of the most picturesque areas in the city, offering riders stunning
                             views of the natural beauty that surrounds them.</p>
                         <div class="mt-10 flex items-center gap-x-6">
-                            <a href="#map"
-                                title="View the Payne Park to Bayfront Park Ebike Trail Map"
+                            <a href="#map" title="View the Payne Park to Bayfront Park Ebike Trail Map"
                                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
                                 Map</a>
                         </div>
@@ -159,36 +157,30 @@
                     <div class="mt-20 w-44">
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/gateway-to-the-beaches/bayfront-park.jpg') }}"
-                                alt="Bayfront Park"
-                                title="EBike Trail Bayfront Park"
+                                alt="Bayfront Park" title="EBike Trail Bayfront Park"
                                 class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                         </div>
                         <div class="mt-8">
                             <img src="{{ asset('/img/trails/gateway-to-the-beaches/payne-park-sign.jpg') }}"
-                                alt="Payne Park"
-                                title="EBike Trail Payne Park"
+                                alt="Payne Park" title="EBike Trail Payne Park"
                                 class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                         </div>
                     </div>
                     <div class="mt-10 w-44">
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/gateway-to-the-beaches/bayfront-sign.png') }}"
-                                alt="Bayfront Park"
-                                title="EBike Trail Sarasota"
+                                alt="Bayfront Park" title="EBike Trail Sarasota"
                                 class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                         </div>
                         <div class="mt-8">
-                            <img src="{{ asset('img/trails/gateway-to-the-beaches/payne-park-main.jpg') }}"
-                                alt="Payne Park"
-                                title="Sarasota EBike Trail"
-                                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                            <img src="{{ asset('img/trails/gateway-to-the-beaches/payne-park-main.jpg') }}" alt="Payne Park"
+                                title="Sarasota EBike Trail" class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                         </div>
                     </div>
                     <div class="mt-40 w-44">
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/gateway-to-the-beaches/bayfront-entrance.jpg') }}"
-                                alt="Bayfront Park"
-                                title="EBike Trail to the Beaches"
+                                alt="Bayfront Park" title="EBike Trail to the Beaches"
                                 class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
                         </div>
                     </div>
