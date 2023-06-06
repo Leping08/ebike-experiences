@@ -86,7 +86,7 @@
                     <div
                         class="mx-auto mt-8 mb-16 grid grid-cols-1 gap-x-4 md:gap-x-6 gap-y-4 md:gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
                         @foreach ($cityWithTrails['trails'] as $trail)
-                            <div class="flex flex-col">
+                            <div> <!-- todo get the cards to be the same height -->
                                 <a href="{{ $trail['route'] ? $trail['route'] : '#' }}"
                                     title="{{ $trail['name'] }} EBike Trail">
                                     <div
