@@ -86,40 +86,36 @@
                     <div
                         class="mx-auto mt-8 mb-16 grid grid-cols-1 gap-x-4 md:gap-x-6 gap-y-4 md:gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
                         @foreach ($cityWithTrails['trails'] as $trail)
-                            <div> <!-- todo get the cards to be the same height -->
-                                <a href="{{ $trail['route'] ? $trail['route'] : '#' }}"
-                                    title="{{ $trail['name'] }} EBike Trail">
-                                    <div
-                                        class="flex flex-col items-start dark:bg-gray-900 bg-white rounded-lg overflow-hidden shadow">
-                                        <div class="relative">
-                                            <img class="aspect-[3/2] w-full object-cover" src="{{ $trail['image'] }}"
-                                                title="{{ $trail['name'] }} EBike Trail" alt="{{ $trail['name'] }}">
-                                            @if ($trail['coming_soon'])
-                                                <div
-                                                    class="absolute top-0 right-0 w-32 h-32 bg-indigo-800 text-white text-center leading-10 triangle">
-                                                    <p class="absolute top-0 right-0 text-md rotate-45 m-4 leading-5">
-                                                        Coming<br>
-                                                        Soon</p>
-                                                </div>
-                                            @endif
-                                        </div>
-                                        <div class="max-w-xl p-4">
-                                            <div class="group relative">
-                                                <div class="flex items-center justify-between mt-2">
-                                                    <h3
-                                                        class="text-2xl font-semibold leading-6 text-gray-900 dark:text-gray-100">
-                                                        <span class="absolute inset-0"></span>
-                                                        {{ $trail['name'] }}
-                                                    </h3>
-                                                </div>
-                                                <p
-                                                    class="mt-5 line-clamp-3 text-sm leading-6 text-gray-700 dark:text-gray-300">
-                                                    {{ $trail['description'] }}</p>
+                            <a href="{{ $trail['route'] ? $trail['route'] : '#' }}" title="{{ $trail['name'] }} EBike Trail"
+                                class="flex flex-col">
+                                <div class="items-start dark:bg-gray-900 bg-white rounded-lg overflow-hidden shadow flex-1">
+                                    <div class="relative">
+                                        <img class="aspect-[3/2] w-full object-cover" src="{{ $trail['image'] }}"
+                                            title="{{ $trail['name'] }} EBike Trail" alt="{{ $trail['name'] }}">
+                                        @if ($trail['coming_soon'])
+                                            <div
+                                                class="absolute top-0 right-0 w-32 h-32 bg-indigo-800 text-white text-center leading-10 triangle">
+                                                <p class="absolute top-0 right-0 text-md rotate-45 m-4 leading-5">
+                                                    Coming<br>
+                                                    Soon</p>
                                             </div>
+                                        @endif
+                                    </div>
+                                    <div class="max-w-xl p-4">
+                                        <div class="group relative flex flex-col">
+                                            <div class="flex items-center justify-between mt-2 flex-1">
+                                                <h3
+                                                    class="text-2xl font-semibold leading-6 text-gray-900 dark:text-gray-100">
+                                                    <span class="absolute inset-0"></span>
+                                                    {{ $trail['name'] }}
+                                                </h3>
+                                            </div>
+                                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-700 dark:text-gray-300">
+                                                {{ $trail['description'] }}</p>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
