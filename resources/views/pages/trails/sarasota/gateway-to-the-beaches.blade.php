@@ -34,7 +34,7 @@
                 ],
             ],
         ];
-
+        
         $mapPath = [
             ['lat' => 27.33431630621581, 'lng' => -82.52828108676111],
             ['lat' => 27.335597606440434, 'lng' => -82.52825761748758],
@@ -55,7 +55,7 @@
             ['lat' => 27.332379733702485, 'lng' => -82.54341612151882],
             ['lat' => 27.33192462531072, 'lng' => -82.54383186392559],
         ];
-
+        
         $mapCenter = [
             'lat' => 27.332954573444702,
             'lng' => -82.53637867557983,
@@ -137,9 +137,7 @@
                 <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
                     <div class="w-full lg:shrink-0">
                         <h2 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-3xl">Gateway
-                            to
-                            the Beaches
-                        </h2>
+                            to the Waterfront and the Legacy Trail</h2>
                         <p
                             class="relative mt-6 md:pr-10 sm:pr-0 text-lg text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
                             One of the most enjoyable Ebike
