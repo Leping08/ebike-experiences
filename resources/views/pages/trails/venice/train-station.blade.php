@@ -76,7 +76,7 @@
 
 
     <div>
-
+        {{-- @todo seo this page --}}
         <div class="overflow-hidden bg-white dark:bg-gray-800 pt-10">
             <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
 
