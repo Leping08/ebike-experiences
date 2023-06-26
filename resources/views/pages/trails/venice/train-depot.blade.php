@@ -1,11 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Venice Train Depot | The Legacy Trail')
+@section('title', 'Venice Train Depot EBike Trail | Best Trails for EBikes near Sarasota')
 
-@section('description',
-    'The Venice Train Depot is the southern terminus of the Legacy Trail. It is located in the heart
-    of downtown Venice, Florida. The depot is a historic landmark and is listed on the National Register of Historic Places.
-    The train depot is also the home of the Venice Area Historical Society.')
+@section('description', 'Discover the Legacy Trail and the infamous Venice Train Depot, a scenic rail-trail connecting
+    Venice to Sarasota, offering a serene route for walkers, joggers, and EBike riders of the Suncoast.')
 
 @section('content')
     @php
@@ -81,7 +79,6 @@
     <div>
         <div class="overflow-hidden bg-white dark:bg-gray-800 pt-10">
             <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
-
                 <nav class="flex" aria-label="Breadcrumb">
                     <ol role="list" class="flex items-center space-x-4">
                         <li>
