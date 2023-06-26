@@ -14,7 +14,7 @@
                 'trails' => [
                     [
                         'name' => 'Legacy Trail',
-                        'route' => route('trails.legacy-trail'),
+                        'route' => route('trails.sarasota.legacy-trail'),
                         'image' => asset('img/trails/legacy-trail/south-terminus-venice.jpg'),
                         'description' => 'Where every mile tells a story of history, culture, and conservation.',
                         'length' => '10.6 miles',
@@ -23,7 +23,7 @@
                     ],
                     [
                         'name' => 'Gateway to the Waterfront and the Legacy Trail',
-                        'route' => route('trails.gateway-to-the-beaches'),
+                        'route' => route('trails.sarasota.gateway-to-the-beaches'),
                         'image' => asset('img/trails/gateway-to-the-beaches/bayfront-park.jpg'),
                         'description' => 'Ride from the Legacy Trail to the bayfront.',
                         'length' => '2 miles',
@@ -60,12 +60,12 @@
                 'trails' => [
                     [
                         'name' => 'Venice Train Station',
-                        'route' => null,
-                        'image' => 'https://www.mustdo.com/wp-content/uploads/2016/12/Historic-Venice-Train-Depot-Tours-Venice-FL.jpg',
+                        'route' => route('trails.venice.train-station'),
+                        'image' => asset('img/trails/venice-train-station/train-station-aerial.jpg'),
                         'description' => 'Where old-world charm meets modern convenience.',
                         'length' => '10.6 miles',
                         'icon' => 'railroad-light',
-                        'coming_soon' => true,
+                        'coming_soon' => false,
                     ],
                 ],
             ],

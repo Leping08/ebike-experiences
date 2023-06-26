@@ -17,7 +17,7 @@ class GatewayToTheBeachesTest extends TestCase
     public function test_gateway_to_the_beaches_page_loads()
     {
         // Testing
-        $response = $this->get(route('trails.gateway-to-the-beaches'));
+        $response = $this->get(route('trails.sarasota.gateway-to-the-beaches'));
 
         $response->assertStatus(200);
     }

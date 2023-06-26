@@ -34,7 +34,7 @@
                 ],
             ],
         ];
-        
+
         $mapPath = [
             ['lat' => 27.33431630621581, 'lng' => -82.52828108676111],
             ['lat' => 27.335597606440434, 'lng' => -82.52825761748758],
@@ -55,7 +55,7 @@
             ['lat' => 27.332379733702485, 'lng' => -82.54341612151882],
             ['lat' => 27.33192462531072, 'lng' => -82.54383186392559],
         ];
-        
+
         $mapCenter = [
             'lat' => 27.332954573444702,
             'lng' => -82.53637867557983,
@@ -120,7 +120,7 @@
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <a href="{{ route('trails.gateway-to-the-beaches') }}"
+                                <a href="{{ route('trails.sarasota.gateway-to-the-beaches') }}"
                                     title="The Gateway to the Waterfront and the Legacy Trail"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
                                     aria-current="page">The Gateway to the Waterfront and the Legacy Trail</a>

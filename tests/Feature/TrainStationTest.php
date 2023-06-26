@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class LegacyTrailTest extends TestCase
+class TrainStationTest extends TestCase
 {
     /**
      * A basic test example.
@@ -14,10 +14,10 @@ class LegacyTrailTest extends TestCase
      * @return void
      * @test
      */
-    public function test_legacy_trail_page_loads()
+    public function test_venice_train_station_page_loads()
     {
         // Testing
-        $response = $this->get(route('trails.sarasota.legacy-trail'));
+        $response = $this->get(route('trails.venice.train-station'));
 
         $response->assertStatus(200);
     }
