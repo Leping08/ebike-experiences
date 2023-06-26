@@ -59,9 +59,9 @@
                 'name' => 'Venice',
                 'trails' => [
                     [
-                        'name' => 'Venice Train Station',
-                        'route' => route('trails.venice.train-station'),
-                        'image' => asset('img/trails/venice-train-station/train-station-aerial.jpg'),
+                        'name' => 'Venice Train Depot',
+                        'route' => route('trails.venice.train-depot'),
+                        'image' => asset('img/trails/venice-train-depot/train-depot-aerial.jpg'),
                         'description' => 'Where old-world charm meets modern convenience.',
                         'length' => '10.6 miles',
                         'icon' => 'railroad-light',

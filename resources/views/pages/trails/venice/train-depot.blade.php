@@ -2,7 +2,10 @@
 
 @section('title', 'Venice Train Depot | The Legacy Trail')
 
-@section('description', 'The Venice Train Depot is the southern terminus of the Legacy Trail. It is located in the heart of downtown Venice, Florida. The depot is a historic landmark and is listed on the National Register of Historic Places. The train depot is also the home of the Venice Area Historical Society.')
+@section('description',
+    'The Venice Train Depot is the southern terminus of the Legacy Trail. It is located in the heart
+    of downtown Venice, Florida. The depot is a historic landmark and is listed on the National Register of Historic Places.
+    The train depot is also the home of the Venice Area Historical Society.')
 
 @section('content')
     @php
@@ -10,7 +13,7 @@
             [
                 'title' => 'Venice Train Depot',
                 'video_id' => 'kN2joKbhKec',
-                'description' => 'The Venice Train Depot is the southern terminus of the Legacy Trail. It is located in the heart of downtown Venice, Florida. The depot is a historic landmark and is listed on the National Register of Historic Places. The train depot is also the home of the Venice Area Historical Society.',
+                'description' => 'The Venice Train Depot is the southern terminus of the Legacy Trail. It is located in the heart of downtown Venice, Florida. The Depot is a historic landmark and is listed on the National Register of Historic Places. The train Depot is also the home of the Venice Area Historical Society.',
                 'parking' => true,
                 'water' => true,
                 'bathrooms' => false,
@@ -18,7 +21,7 @@
                     'lat' => 27.1009581,
                     'lng' => -82.4401363,
                 ],
-            ]
+            ],
         ];
 
         $mapPath = [
@@ -76,7 +79,6 @@
 
 
     <div>
-        {{-- @todo seo this page --}}
         <div class="overflow-hidden bg-white dark:bg-gray-800 pt-10">
             <div class="container mx-auto max-w-7xl px-6 lg:flex lg:px-8">
 
@@ -84,8 +86,7 @@
                     <ol role="list" class="flex items-center space-x-4">
                         <li>
                             <div>
-                                <a href="{{ route('home') }}"
-                                    title="Florida EBike Experiences"
+                                <a href="{{ route('home') }}" title="Florida EBike Experiences"
                                     class="dark:text-gray-300 dark:hover:text-gray-500 text-gray-700  hover:text-gray-500">
                                     <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
@@ -106,8 +107,7 @@
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <a href="{{ route('trails.index') }}"
-                                    title="Florida Electric Bike Trails"
+                                <a href="{{ route('trails.index') }}" title="Florida Electric Bike Trails"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500">Trails</a>
                             </div>
                         </li>
@@ -120,8 +120,7 @@
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <a href="#"
-                                    title="Venice Bike Trails"
+                                <a href="#" title="Venice Bike Trails"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
                                     aria-current="page">Venice</a>
                             </div>
@@ -135,10 +134,9 @@
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <a href="{{ route('trails.venice.train-station') }}"
-                                    title="Venice Train Station"
+                                <a href="{{ route('trails.venice.train-depot') }}" title="Venice Train Depot"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
-                                    aria-current="page">Train Station</a>
+                                    aria-current="page">Train Depot</a>
                             </div>
                         </li>
                     </ol>
@@ -152,50 +150,55 @@
                     class="mx-auto grid max-w-4xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
                     <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">The
-                            Venice Train Station
+                            Venice Train Depot
                         </h2>
                         <div class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">
                             <p>
-                                Adjacent to the Venice Train Depot is a popular multi-use path known as the Legacy Trail. This trail, stretching over 12 miles from Venice to Sarasota, is a paved former railway line that offers a serene and scenic route for walkers, joggers, and cyclists alike. A prime example of "rail-trail" projects, the Legacy Trail is an initiative to repurpose disused railway lines for public recreational use, promoting both exercise and ecological preservation.
+                                Adjacent to the Venice Train Depot is a popular multi-use path known as the Legacy Trail.
+                                This trail, stretching over 12 miles from Venice to Sarasota, is a paved former railway line
+                                that offers a serene and scenic route for walkers, joggers, and cyclists alike. A prime
+                                example of "rail-trail" projects, the Legacy Trail is an initiative to repurpose disused
+                                railway lines for public recreational use, promoting both exercise and ecological
+                                preservation.
                             </p>
                         </div>
                         <div class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">
                             <p>
-                                In a mere ten minutes, your bicycle carries you from the Venice train depot through the very heart of downtown Venice. The ride is a whirlwind tour of the city's urban character, gliding past quaint boutiques, the sizzle of street food, and a symphony of everyday moments that make up the area's vibrant mosaic. The journey culminates with the arrival at the tranquil Venice Beach, where the city's energy surrenders to the soothing rhythm of the ocean waves.
+                                In a mere ten minutes, your bicycle carries you from the Venice Train Depot through the very
+                                heart of downtown Venice. The ride is a whirlwind tour of the city's urban character,
+                                gliding past quaint boutiques, the sizzle of street food, and a symphony of everyday moments
+                                that make up the area's vibrant mosaic. The journey culminates with the arrival at the
+                                tranquil Venice Beach, where the city's energy surrenders to the soothing rhythm of the
+                                ocean waves.
                             </p>
                         </div>
                         <div class="mt-10 flex">
-                            <a href="#map"
-                                title="View the Venice Trail Map"
+                            <a href="#map" title="View the Venice Trail Map"
                                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
                                 Map</a>
                         </div>
                     </div>
                     <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                         <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <img src="{{ asset('img/trails/venice-train-station/train-station-aerial.jpg') }}"
-                                alt="Venice Legacy Trail"
-                                title="The Legacy Trail in Venice, Florida"
+                            <img src="{{ asset('img/trails/venice-train-depot/train-depot-aerial.jpg') }}"
+                                alt="Venice Legacy Trail" title="The Legacy Trail in Venice, Florida"
                                 class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                         </div>
                         <div
                             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
                             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <img src="{{ asset('img/trails/venice-train-station/circus-train-car-museum.jpg') }}"
-                                    alt="Legacy Trail Venice, Florida"
-                                    title="Venice EBike Trail"
+                                <img src="{{ asset('img/trails/venice-train-depot/circus-train-car-museum.jpg') }}"
+                                    alt="Legacy Trail Venice, Florida" title="Venice EBike Trail"
                                     class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <img src="{{ asset('img/trails/venice-train-station/venice-pier.jpg') }}"
-                                    alt="Venice Legacy Trail"
-                                    title="Electric Bike Trail Sarasota"
+                                <img src="{{ asset('img/trails/venice-train-depot/venice-pier.jpg') }}"
+                                    alt="Venice Legacy Trail" title="Electric Bike Trail Sarasota"
                                     class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <img src="{{ asset('img/trails/venice-train-station/venice-sign.jpg') }}"
-                                    alt="Legacy Trail Venice, Florida"
-                                    title="Sarasota EBike Trails"
+                                <img src="{{ asset('img/trails/venice-train-depot/venice-sign.jpg') }}"
+                                    alt="Legacy Trail Venice, Florida" title="Sarasota EBike Trails"
                                     class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                         </div>
@@ -211,7 +214,17 @@
                     <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                         <div class="lg:w-full lg:max-w-4xl lg:flex-auto">
                             <div class="mt-10 max-w-xl text-base leading-7 text-gray-700 dark:text-gray-300">
-                                <p>Constructed in 1927 by the Brotherhood of Locomotive Engineers, the Depot emerged as the southern gem of the Seaboard Air Line Railway, marking the southernmost stop in a rail line that threaded through Tampa, St. Petersburg, and Sarasota. As a focal point during the Florida land boom, the Depot swiftly evolved beyond its original purpose as a transportation hub, becoming a gateway for new settlers. However, the last passenger train departed in 1971, and the depot was ultimately abandoned by the Seaboard Coast Line Railroad, the successor to the Seaboard Air Line, in 1992. Despite this, Sarasota County recognized the Depot's historical significance, purchasing and restoring it to its past splendor in 2003. Today, the fully revived train station stands as a testament to Venice's rich history, serving as both a community gathering place and a museum adorned with exhibits that recount the area's unique past.</p>
+                                <p>Constructed in 1927 by the Brotherhood of Locomotive Engineers, the Depot emerged as the
+                                    southern gem of the Seaboard Air Line Railway, marking the southernmost stop in a rail
+                                    line that threaded through Tampa, St. Petersburg, and Sarasota. As a focal point during
+                                    the Florida land boom, the Depot swiftly evolved beyond its original purpose as a
+                                    transportation hub, becoming a gateway for new settlers. However, the last passenger
+                                    train departed in 1971, and the Depot was ultimately abandoned by the Seaboard Coast
+                                    Line Railroad, the successor to the Seaboard Air Line, in 1992. Despite this, Sarasota
+                                    County recognized the Depot's historical significance, purchasing and restoring it to
+                                    its past splendor in 2003. Today, the fully revived train station stands as a testament
+                                    to Venice's rich history, serving as both a community gathering place and a museum
+                                    adorned with exhibits that recount the area's unique past.</p>
                             </div>
                         </div>
                         <div class="lg:flex lg:flex-auto lg:justify-center">
@@ -251,7 +264,7 @@
             <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">Trailheads</h2>
                 <div class="mx-auto lg:mx-0 lg:max-w-none dark:text-gray-300 text-gray-700 mt-4">
-                    Looking to explore the Venice train station? Check out our list of trailheads along the way!
+                    Looking to explore the Venice Train Depot? Check out our list of trailheads along the way!
                 </div>
 
                 <div

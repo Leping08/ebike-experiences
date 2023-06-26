@@ -33,9 +33,9 @@ Route::get('/trails/sarasota/gateway-to-the-beaches', function () {
     return view('pages.trails.sarasota.gateway-to-the-beaches');
 })->name('trails.sarasota.gateway-to-the-beaches');
 
-Route::get('/trails/venice/venice-train-station', function () {
-    return view('pages.trails.venice.train-station');
-})->name('trails.venice.train-station');
+Route::get('/trails/venice/venice-train-depot', function () {
+    return view('pages.trails.venice.train-depot');
+})->name('trails.venice.train-depot');
 
 Route::get('/sitemap', function () {
     return Redirect::to(asset('/sitemap.xml'));
