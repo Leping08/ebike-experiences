@@ -214,20 +214,19 @@
                                 <p>Constructed in 1927 by the Brotherhood of Locomotive Engineers, the Depot emerged as the southern gem of the Seaboard Air Line Railway, marking the southernmost stop in a rail line that threaded through Tampa, St. Petersburg, and Sarasota. As a focal point during the Florida land boom, the Depot swiftly evolved beyond its original purpose as a transportation hub, becoming a gateway for new settlers. However, the last passenger train departed in 1971, and the depot was ultimately abandoned by the Seaboard Coast Line Railroad, the successor to the Seaboard Air Line, in 1992. Despite this, Sarasota County recognized the Depot's historical significance, purchasing and restoring it to its past splendor in 2003. Today, the fully revived train station stands as a testament to Venice's rich history, serving as both a community gathering place and a museum adorned with exhibits that recount the area's unique past.</p>
                             </div>
                         </div>
-                        {{-- @todo add stats --}}
-                        {{-- <div class="lg:flex lg:flex-auto lg:justify-center">
+                        <div class="lg:flex lg:flex-auto lg:justify-center">
                             <dl class="w-64 space-y-8 xl:w-80">
                                 <div class="flex flex-col-reverse gap-y-4">
-                                    <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Passangers Per Day
+                                    <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Constructed
                                     </dt>
-                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">82,000+
+                                    <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">1927
                                     </dd>
                                 </div>
 
                                 <div class="flex flex-col-reverse gap-y-4">
-                                    <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Users every year</dt>
+                                    <dt class="text-base leading-7 text-gray-600 dark:text-gray-400">Restored</dt>
                                     <dd class="text-5xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
-                                        650,000+
+                                        2003
                                     </dd>
                                 </div>
 
@@ -237,7 +236,7 @@
                                     </dd>
                                 </div>
                             </dl>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>
