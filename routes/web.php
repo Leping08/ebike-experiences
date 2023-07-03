@@ -41,6 +41,7 @@ Route::get('/sitemap', function () {
     return Redirect::to(asset('/sitemap.xml'));
 })->name('sitemap');
 
+
 // Route::get('/contact-us', function () {
 //     return view('pages.contact');
 // })->name('contact');
