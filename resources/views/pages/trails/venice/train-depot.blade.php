@@ -14,7 +14,7 @@
                 'description' => 'The Venice Train Depot is the southern terminus of the Legacy Trail. It is located in the heart of downtown Venice, Florida. The Depot is a historic landmark and is listed on the National Register of Historic Places. The train Depot is also the home of the Venice Area Historical Society.',
                 'parking' => true,
                 'water' => true,
-                'bathrooms' => false,
+                'bathrooms' => true,
                 'position' => [
                     'lat' => 27.1009581,
                     'lng' => -82.4401363,

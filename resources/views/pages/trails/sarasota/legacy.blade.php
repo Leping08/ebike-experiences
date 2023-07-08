@@ -91,9 +91,22 @@
                     'lng' => -82.46381693586189,
                 ],
             ],
+            [
+                'title' => 'Venice Train Depot',
+                'video_id' => 'kN2joKbhKec',
+                'description' => 'The Venice Train Depot Trailhead is located at the intersection of...',
+                'parking' => true,
+                'water' => true,
+                'bathrooms' => true,
+                'position' => [
+                    'lat' => 27.10078050144144,
+                    'lng' => -82.44043700939775,
+                ],
+            ],
         ];
 
         $mapPath = [
+            ['lat' => 27.100780, 'lng' => -82.440437],
             ['lat' => 27.101446, 'lng' => -82.4406],
             ['lat' => 27.108499, 'lng' => -82.442102],
             ['lat' => 27.108844, 'lng' => -82.44228],
@@ -140,8 +153,8 @@
         ];
 
         $mapCenter = [
-            'lat' => 27.276596,
-            'lng' => -82.482037,
+            'lat' => 27.21672098583238,
+            'lng' => -82.46904344998264,
         ];
     @endphp
 
