@@ -276,7 +276,7 @@
                     </div>
                     <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                         <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <img src="{{ asset('/img/trails/legacy-trail/trail-first-photo.jpg') }}"
+                            <img src="{{ asset('img/trails/legacy-trail/trail-first-photo.jpg') }}"
                                 alt="Sarasota Legacy Trail"
                                 title="The Legacy Trail in Sarasota, Florida"
                                 class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
@@ -284,19 +284,19 @@
                         <div
                             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
                             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-terminus-venice.jpg') }}"
+                                <img src="{{ asset('img/trails/legacy-trail/south-terminus-venice.jpg') }}"
                                     alt="Legacy Trail Venice, Florida"
                                     title="Venice EBike Trail"
                                     class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/south-creek.jpg') }}"
+                                <img src="{{ asset('img/trails/legacy-trail/south-creek.jpg') }}"
                                     alt="South Creek Legacy Trail"
                                     title="Electric Bike Trail Sarasota"
                                     class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <img src="{{ asset('/img/trails/legacy-trail/trail-shelter.jpg') }}"
+                                <img src="{{ asset('img/trails/legacy-trail/trail-shelter.jpg') }}"
                                     alt="Legacy Trail Shelter"
                                     title="Sarasota EBike Trails"
                                     class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">

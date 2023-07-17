@@ -37,6 +37,10 @@ Route::get('/trails/venice/venice-train-depot', function () {
     return view('pages.trails.venice.train-depot');
 })->name('trails.venice.train-depot');
 
+Route::get('/trails/sarasota/ringling-bridge', function () {
+    return view('pages.trails.sarasota.ringling-bridge');
+})->name('trails.sarasota.ringling-bridge');
+
 Route::get('/sitemap', function () {
     return Redirect::to(asset('/sitemap.xml'));
 })->name('sitemap');
