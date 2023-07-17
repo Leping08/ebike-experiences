@@ -8,7 +8,7 @@
     @php
         $trailheads = [
             [
-                'title' => 'Gateway to Longboat Key',
+                'title' => 'Gateway to Longboat Key and the Islands',
                 'video_id' => 'vB3NkOEVUhE',
                 'description' => 'Ride over the Ringling Causway to the Longboat Key.',
                 'parking' => true,
@@ -20,7 +20,7 @@
                 ],
             ],
             [
-                'title' => 'Gateway to the Sarasota Mainland',
+                'title' => 'Gateway to the Sarasota Mainland from the Islands',
                 'video_id' => 'HaG9cedRqoY',
                 'description' => 'Ride over the Ringling Causway to the Sarasota Mainland.',
                 'parking' => true,
@@ -260,7 +260,7 @@
             <div class="continer mx-auto max-w-7xl py-24 sm:py-16 px-6">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">Trailheads</h2>
                 <div class="mx-auto lg:mx-0 lg:max-w-none dark:text-gray-300 text-gray-700 mt-4">
-                    Explore the becahes of Bayfront park and take a ride to the start of the Legacy Trail at Payne Park.
+                    Explore the beaches of Bayfront Park and take a ride across the Ringling Bridge.
                 </div>
 
                 <div
