@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
-    <title>@yield('title') | {{ config('app.seo_name') }}</title>
+    <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
     @vite('resources/css/app.css')
     <!-- Favorite Icons -->

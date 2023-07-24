@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
@@ -23,8 +22,6 @@ Route::get('/trails', function () {
     return view('pages.trails.index');
 })->name('trails.index');
 
-Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-
 Route::get('/trails/sarasota/legacy-trail', function () {
     return view('pages.trails.sarasota.legacy');
 })->name('trails.sarasota.legacy-trail');
@@ -45,6 +42,7 @@ Route::get('/sitemap', function () {
     return Redirect::to(asset('/sitemap.xml'));
 })->name('sitemap');
 
+// Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 // Route::get('/contact-us', function () {
 //     return view('pages.contact');
