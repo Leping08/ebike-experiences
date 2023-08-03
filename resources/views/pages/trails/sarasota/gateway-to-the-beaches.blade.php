@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Gateway to the Waterfront and the Legacy Trail')
+@section('title', 'Ringling Blvd. Bike Lane - Gateway to the Waterfront and the Legacy Trail')
 
 @section('description',
     'Experience the dedicated bike path through the downtown area. The path is well marked and
@@ -123,7 +123,7 @@
                                 <a href="{{ route('trails.sarasota.gateway-to-the-beaches') }}"
                                     title="The Gateway to the Waterfront and the Legacy Trail"
                                     class="ml-4 text-sm font-medium dark:text-gray-300 text-gray-700 hover:text-gray-500 dark:hover:text-gray-500"
-                                    aria-current="page">The Gateway to the Waterfront and the Legacy Trail</a>
+                                    aria-current="page">Ringling Blvd. Bike Lane - Gateway to the Waterfront and the Legacy Trail</a>
                             </div>
                         </li>
                     </ol>

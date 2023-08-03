@@ -22,7 +22,7 @@
                         'coming_soon' => false,
                     ],
                     [
-                        'name' => 'Gateway to the Waterfront and the Legacy Trail',
+                        'name' => 'Ringling Blvd. Bike Lane - Gateway to the Waterfront and the Legacy Trail',
                         'route' => route('trails.sarasota.gateway-to-the-beaches'),
                         'image' => asset('img/trails/gateway-to-the-beaches/bayfront-park.jpg'),
                         'description' => 'Ride from the Legacy Trail to the bayfront.',

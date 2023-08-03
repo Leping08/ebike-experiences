@@ -18,7 +18,7 @@
                         class="relative mt-6 md:pr-10 sm:pr-0 text-lg leading-8 text-gray-600 dark:text-gray-300 sm:max-w-md lg:max-w-none">
                         Welcome to our website dedicated to all things E Bike. If you are looking for a thrilling and eco-friendly way to explore the outdoors you have come to the right place.
 
-                        Our site is a hub for E Bike enthusiasts that share unforgettable ride experiences. So get ready for your E Bike ride that will propel you through a mix of nature and a paradise of rural delights.
+                        Our site is a hub for E Bike enthusiasts that share unforgettable ride experiences. So get ready for your E Bike ride that will propel you through a mix of nature and a paradise of urban delights.
 
                         The sights, sounds and fresh air that combine with physical activity will leave you ever searching to expand your journey!</p>
                     <div class="mt-10 flex items-center gap-x-6">

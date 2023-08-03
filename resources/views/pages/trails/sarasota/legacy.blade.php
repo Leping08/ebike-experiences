@@ -13,7 +13,7 @@
                 'description' => 'The Ashton Trailhead is located at the intersection of Ashton Road and...',
                 'parking' => true,
                 'water' => true,
-                'bathrooms' => false,
+                'bathrooms' => true,
                 'position' => [
                     'lat' => 27.276596,
                     'lng' => -82.482037,
@@ -25,7 +25,7 @@
                 'description' => 'The Culverhouse Park Trailhead is located at the intersection of...',
                 'parking' => true,
                 'water' => false,
-                'bathrooms' => false,
+                'bathrooms' => true,
                 'position' => [
                     'lat' => 27.249038,
                     'lng' => -82.475492,
@@ -37,7 +37,7 @@
                 'description' => 'The Payne Park Trailhead is located at the intersection of...',
                 'parking' => true,
                 'water' => true,
-                'bathrooms' => false,
+                'bathrooms' => true,
                 'position' => [
                     'lat' => 27.333336,
                     'lng' => -82.525669,
@@ -47,7 +47,7 @@
                 'title' => 'McIntosh Trailhead',
                 'video_id' => 'KC8oYgzlP4Y',
                 'description' => 'The McIntosh Trailhead is located at the intersection of...',
-                'parking' => false,
+                'parking' => true,
                 'water' => true,
                 'bathrooms' => true,
                 'position' => [
@@ -59,7 +59,7 @@
                 'title' => 'Sarasota Springs Trailhead',
                 'video_id' => 'h4qiMONesNo',
                 'description' => 'The Sarasota Springs Trailhead is located at the intersection of...',
-                'parking' => false,
+                'parking' => true,
                 'water' => true,
                 'bathrooms' => true,
                 'position' => [
@@ -85,7 +85,7 @@
                 'description' => 'The Pompano Trailhead is located at the intersection of...',
                 'parking' => true,
                 'water' => true,
-                'bathrooms' => false,
+                'bathrooms' => true,
                 'position' => [
                     'lat' => 27.196500393592462,
                     'lng' => -82.46381693586189,
