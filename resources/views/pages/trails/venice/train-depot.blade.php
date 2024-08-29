@@ -152,7 +152,7 @@
                         <div class="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300">
                             <p>
                                 Adjacent to the Venice Train Depot is a popular multi-use path known as the Legacy Trail.
-                                This trail, stretching over 12 miles from Venice to Sarasota, is a paved former railway line
+                                This trail, stretching over 19 miles from Venice to Sarasota, is a paved former railway line
                                 that offers a serene and scenic route for walkers, joggers, and cyclists alike. A prime
                                 example of "rail-trail" projects, the Legacy Trail is an initiative to repurpose disused
                                 railway lines for public recreational use, promoting both exercise and ecological

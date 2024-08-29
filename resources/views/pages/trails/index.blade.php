@@ -63,7 +63,7 @@
                         'route' => route('trails.venice.train-depot'),
                         'image' => asset('img/trails/venice-train-depot/train-depot-aerial.jpg'),
                         'description' => 'Where old-world charm meets modern convenience.',
-                        'length' => '10.6 miles',
+                        'length' => '19 miles',
                         'icon' => 'railroad-light',
                         'coming_soon' => false,
                     ],
