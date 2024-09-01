@@ -135,6 +135,11 @@
             </div>
 
         </div>
+
+        <div>
+            @include('components.trail-guide')
+        </div>
+
         <div>
             @include('components.ebike-cta')
         </div>
