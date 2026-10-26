@@ -251,7 +251,7 @@
         </div>
 
         <div id="map" class="w-full">
-            <trail-map api-key="{{ config('map.api_key') }}" :trail-heads="{{ json_encode($trailheads) }}"
+            <trail-map api-key="{{ config('map.api_key') }}" map-id="{{ config('map.map_id') }}" :trail-heads="{{ json_encode($trailheads) }}"
                 :path="{{ json_encode($mapPath) }}" :center="{{ json_encode($mapCenter) }}" :zoom="14" />
         </div>
 

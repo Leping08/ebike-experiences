@@ -1,7 +1,7 @@
 <template>
-    <GoogleMap :api-key="apiKey" style="width: 100%; height: 500px" :center="center" :zoom="zoom">
+    <GoogleMap :api-key="apiKey" :map-id="mapId" style="width: 100%; height: 500px" :center="center" :zoom="zoom">
         <template v-for="(trailHead, index) in trailHeads" :key="index">
-            <Marker :options="trailHead">
+            <AdvancedMarker :options="{ position: trailHead.position, title: trailHead.title }">
                 <InfoWindow>
                     <div>
                         <h1 class="text-indigo-500 text-2xl mb-2 font-semibold">{{ trailHead.title }}</h1>
@@ -57,18 +57,23 @@
                         </div>
                     </div>
                 </InfoWindow>
-            </Marker>
+            </AdvancedMarker>
         </template>
         <Polyline :options="trailOptions" />
     </GoogleMap>
 </template>
 
 <script setup>
-import { GoogleMap, Marker, Polyline, InfoWindow } from "vue3-google-map";
+import { GoogleMap, AdvancedMarker, Polyline, InfoWindow } from "vue3-google-map";
 
 // https://vue3-google-map.netlify.app/components/polyline.html
 const props = defineProps({
     apiKey: {
+        required: true,
+        type: String,
+        default: ''
+    },
+    mapId: {
         required: true,
         type: String,
         default: ''
