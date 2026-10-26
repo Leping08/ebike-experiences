@@ -46,7 +46,6 @@
 
 
     @vite('resources/js/app.js')
-    <script src="https://unpkg.com/vue3-google-map"></script>
 </body>
 
 </html>
