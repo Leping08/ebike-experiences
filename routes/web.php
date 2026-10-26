@@ -31,6 +31,21 @@ Route::get('/sitemap', function () {
     return Redirect::to(asset('/sitemap.xml'));
 })->name('sitemap');
 
+// Vapor doesn't upload *.webmanifest files to the asset CDN, so serve it from the app domain
+Route::get('/site.webmanifest', function () {
+    return response()->json([
+        'name' => config('app.seo_name'),
+        'short_name' => config('app.seo_name'),
+        'icons' => [
+            ['src' => asset('/android-chrome-192x192.png'), 'sizes' => '192x192', 'type' => 'image/png'],
+            ['src' => asset('/android-chrome-512x512.png'), 'sizes' => '512x512', 'type' => 'image/png'],
+        ],
+        'theme_color' => '#ffffff',
+        'background_color' => '#ffffff',
+        'display' => 'standalone',
+    ], headers: ['Content-Type' => 'application/manifest+json']);
+})->name('webmanifest');
+
 // Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 // Route::get('/contact-us', function () {
