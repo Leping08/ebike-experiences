@@ -10,11 +10,8 @@ class HomePageTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
-     * @test
      */
-    public function test_home_page_loads()
+    public function test_home_page_loads(): void
     {
         $response = $this->get(route('home'));
 

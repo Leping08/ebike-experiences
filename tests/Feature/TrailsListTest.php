@@ -10,11 +10,8 @@ class TrailsListTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
-     * @test
      */
-    public function test_the_site_map_page_loads()
+    public function test_the_site_map_page_loads(): void
     {
         // Testing
         $response = $this->get(route('trails.index'));

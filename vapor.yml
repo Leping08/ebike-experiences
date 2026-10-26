@@ -6,7 +6,7 @@ environments:
     cli-memory: 512
     scheduler: false
     domain: ebikeexperiences.com
-    runtime: "php-8.4:al2"
+    runtime: "php-8.5:al2023"
     build:
       - "COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev"
       - "php artisan event:cache"

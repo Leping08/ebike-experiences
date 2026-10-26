@@ -1,3 +1,3 @@
-FROM laravelphp/vapor:php84
+FROM laravelphp/vapor:php85
 
 COPY . /var/task

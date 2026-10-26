@@ -10,11 +10,8 @@ class GatewayToTheBeachesTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
-     * @test
      */
-    public function test_gateway_to_the_beaches_page_loads()
+    public function test_gateway_to_the_beaches_page_loads(): void
     {
         // Testing
         $response = $this->get(route('trails.sarasota.gateway-to-the-beaches'));

@@ -10,11 +10,8 @@ class TrainDepotTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
-     * @test
      */
-    public function test_venice_train_depot_page_loads()
+    public function test_venice_train_depot_page_loads(): void
     {
         // Testing
         $response = $this->get(route('trails.venice.train-depot'));
