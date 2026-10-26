@@ -10,11 +10,8 @@ class LegacyTrailTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
-     * @test
      */
-    public function test_legacy_trail_page_loads()
+    public function test_legacy_trail_page_loads(): void
     {
         // Testing
         $response = $this->get(route('trails.sarasota.legacy-trail'));
