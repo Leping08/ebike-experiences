@@ -23,7 +23,7 @@
                                 <label class="block text-gray-700 dark:text-gray-300 font-bold mb-2"
                                     for="name">Name</label>
                                 <input type="text" name="name" id="name"
-                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline-gray @error('name') border-red-500 @enderror"
+                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-xs focus:outline-hidden focus:shadow-outline-gray @error('name') border-red-500 @enderror"
                                     placeholder="Enter your name" value="{{ old('name') }}">
                                 @error('name')
                                     <p class="text-red-500 mt-2 text-sm">{{ $message }}</p>
@@ -33,7 +33,7 @@
                                 <label class="block text-gray-700 dark:text-gray-300 font-bold mb-2"
                                     for="email">Email</label>
                                 <input type="email" name="email" id="email"
-                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline-gray @error('email') border-red-500 @enderror"
+                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-xs focus:outline-hidden focus:shadow-outline-gray @error('email') border-red-500 @enderror"
                                     placeholder="Enter your email address" value="{{ old('email') }}">
                                 @error('email')
                                     <p class="text-red-500 mt-2 text-sm">{{ $message }}</p>
@@ -43,7 +43,7 @@
                                 <label class="block text-gray-700 dark:text-gray-300 font-bold mb-2"
                                     for="phone">Phone</label>
                                 <input type="tel" name="phone" id="phone"
-                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline-gray @error('phone') border-red-500 @enderror"
+                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-xs focus:outline-hidden focus:shadow-outline-gray @error('phone') border-red-500 @enderror"
                                     placeholder="Enter your phone number" value="{{ old('phone') }}">
                                 @error('phone')
                                     <p class="text-red-500 mt-2 text-sm">{{ $message }}</p>
@@ -53,7 +53,7 @@
                                 <label class="block text-gray-700 dark:text-gray-300 font-bold mb-2"
                                     for="message">Message</label>
                                 <textarea name="message" id="message" rows="5"
-                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-sm focus:outline-none focus:shadow-outline-gray @error('message') border-red-500 @enderror"
+                                    class="dark:text-gray-300 dark:bg-gray-950 w-full px-4 py-3 rounded-lg shadow-xs focus:outline-hidden focus:shadow-outline-gray @error('message') border-red-500 @enderror"
                                     placeholder="Enter your message">{{ old('message') }}</textarea>
                                 @error('message')
                                     <p class="text-red-500 mt-2 text-sm">{{ $message }}</p>
@@ -61,7 +61,7 @@
                             </div>
                             <div class="mb-6">
                                 <button type="submit"
-                                    class="w-full bg-indigo-600 text-white rounded-lg px-4 py-3 focus:outline-none focus:bg-indigo-500">Send
+                                    class="w-full bg-indigo-600 text-white rounded-lg px-4 py-3 focus:outline-hidden focus:bg-indigo-500">Send
                                     Message</button>
                             </div>
                         </form>

@@ -122,7 +122,7 @@
                             <div>
                                 <a href="{{ route('home') }}" title="Florida EBike Experiences"
                                     class="dark:text-gray-300 dark:hover:text-gray-500 text-gray-700  hover:text-gray-500">
-                                    <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"
+                                    <svg class="h-6 w-6 shrink-0" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
@@ -135,7 +135,7 @@
 
                         <li>
                             <div class="flex items-center">
-                                <svg class="h-6 w-6 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                <svg class="h-6 w-6 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
@@ -148,7 +148,7 @@
 
                         <li>
                             <div class="flex items-center">
-                                <svg class="h-6 w-6 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                <svg class="h-6 w-6 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
@@ -162,7 +162,7 @@
 
                         <li>
                             <div class="flex items-center">
-                                <svg class="h-6 w-6 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                <svg class="h-6 w-6 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
@@ -212,7 +212,7 @@
                         </div>
                         <div class="mt-10 flex items-center gap-x-6">
                             <a href="#map" title="Ringling Bridge Trail Map"
-                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
+                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
                                 Map</a>
                         </div>
                     </div>
@@ -222,28 +222,28 @@
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/ringling-bridge/lights.jpg') }}" alt="Ringling Bridge Night"
                                 title="Ringling Bridge Sarasota"
-                                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                                class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                         </div>
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/ringling-bridge/path-up.webp') }}"
                                 alt="Ringling Bridge EBike Path" title="Sarasota EBike Path"
-                                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                                class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                         </div>
                     </div>
                     <div class="mt-10 w-44">
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/ringling-bridge/sunset.jpg') }}" alt="Ringling Bridge at Sunset" title="Electric Bike Bridge Sarasota"
-                                class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                                class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                         </div>
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/ringling-bridge/lido-key-beach.jpg') }}" alt="Lido Beach"
-                                title="Sarasota Beaches" class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                                title="Sarasota Beaches" class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                         </div>
                     </div>
                     <div class="mt-40 w-44">
                         <div class="mt-8">
                             <img src="{{ asset('img/trails/ringling-bridge/st-armands-circle-aerial.jpg') }}" alt="St. Armands Circle"
-                                title="EBike Trail St. Armands" class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                                title="EBike Trail St. Armands" class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                     class="mx-auto mt-16 grid grid-cols-1 gap-x-4 md:gap-x-6 gap-y-4 md:gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
                     @foreach ($trailheads as $trailhead)
                         <article
-                            class="flex flex-col items-start dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow">
+                            class="flex flex-col items-start dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow-sm">
                             <div class="aspect-video w-full">
                                 <iframe class="w-full h-full"
                                     src="https://www.youtube.com/embed/{{ $trailhead['video_id'] }}?controls=1&playlist={{ $trailhead['video_id'] }}&loop=1"

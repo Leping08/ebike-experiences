@@ -64,7 +64,6 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
 import { GoogleMap, Marker, Polyline, InfoWindow } from "vue3-google-map";
 
 // https://vue3-google-map.netlify.app/components/polyline.html

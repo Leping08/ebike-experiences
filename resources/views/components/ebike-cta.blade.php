@@ -7,7 +7,7 @@
                 Cycles to test ride and buy the ideal bike for your ride on the Legacy Trail.</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
                 <a href="https://www.ebikesandcycles.com/?utm_source=ebikeexperiences&utm_medium=referral" target="_blank"
-                    class="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get
+                    class="rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-xs bg-indigo-600 text-white focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get
                     started</a>
             </div>
         </div>
