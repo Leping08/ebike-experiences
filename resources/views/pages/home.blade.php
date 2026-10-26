@@ -24,7 +24,7 @@
                     <div class="mt-10 flex items-center gap-x-6">
                         <a href="{{ route('trails.index') }}"
                             title="Florida EBike Trails"
-                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Find
+                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Find
                             a trail</a>
                     </div>
                 </div>
@@ -33,27 +33,27 @@
                 <div class="mt-20 w-44">
                     <div class="mt-8">
                         <img src="{{ asset('/img/bikes/speedometer.jpg') }}" alt="Bike image"
-                            class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                            class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                     </div>
                     <div class="mt-8">
                         <img src="{{ asset('/img/bikes/folding-bike.jpg') }}" alt="Bike image"
-                            class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                            class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
                 <div class="mt-10 w-44">
                     <div class="mt-8">
                         <img src="{{ asset('/img/bikes/sunset.jpg') }}" alt="Bike image"
-                            class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                            class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                     </div>
                     <div class="mt-8">
                         <img src="{{ asset('/img/bikes/bike-light.jpg') }}" alt="Bike image"
-                            class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                            class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
                 <div class="mt-40 w-44">
                     <div class="mt-8">
                         <img src="{{ asset('/img/bikes/blue-bike.jpg') }}" alt="Bike image"
-                            class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg">
+                            class="aspect-2/3 w-full rounded-xl object-cover shadow-lg">
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                                     <div class="mt-10 flex items-center gap-x-6">
                                         <a href="{{ route('trails.sarasota.legacy-trail') }}"
                                             title="The Legacy Trail Sarasota"
-                                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">More
+                                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">More
                                             Info</a>
                                     </div>
 

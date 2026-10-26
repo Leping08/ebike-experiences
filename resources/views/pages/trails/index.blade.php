@@ -88,9 +88,9 @@
                         @foreach ($cityWithTrails['trails'] as $trail)
                             <a href="{{ $trail['route'] ? $trail['route'] : '#' }}" title="{{ $trail['name'] }} EBike Trail"
                                 class="flex flex-col">
-                                <div class="items-start dark:bg-gray-900 bg-white rounded-lg overflow-hidden shadow flex-1">
+                                <div class="items-start dark:bg-gray-900 bg-white rounded-lg overflow-hidden shadow-sm flex-1">
                                     <div class="relative">
-                                        <img class="aspect-[3/2] w-full object-cover" src="{{ $trail['image'] }}"
+                                        <img class="aspect-3/2 w-full object-cover" src="{{ $trail['image'] }}"
                                             title="{{ $trail['name'] }} EBike Trail" alt="{{ $trail['name'] }}">
                                         @if ($trail['coming_soon'])
                                             <div

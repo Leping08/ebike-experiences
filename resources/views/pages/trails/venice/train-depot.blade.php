@@ -85,7 +85,7 @@
                             <div>
                                 <a href="{{ route('home') }}" title="Florida EBike Experiences"
                                     class="dark:text-gray-300 dark:hover:text-gray-500 text-gray-700  hover:text-gray-500">
-                                    <svg class="h-6 w-6 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"
+                                    <svg class="h-6 w-6 shrink-0" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
@@ -98,7 +98,7 @@
 
                         <li>
                             <div class="flex items-center">
-                                <svg class="h-6 w-6 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                <svg class="h-6 w-6 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
@@ -111,7 +111,7 @@
 
                         <li>
                             <div class="flex items-center">
-                                <svg class="h-6 w-6 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                <svg class="h-6 w-6 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
@@ -125,7 +125,7 @@
 
                         <li>
                             <div class="flex items-center">
-                                <svg class="h-6 w-6 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                <svg class="h-6 w-6 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                     aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
@@ -171,7 +171,7 @@
                         </div>
                         <div class="mt-10 flex">
                             <a href="#map" title="View the Venice Trail Map"
-                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
+                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">View
                                 Map</a>
                         </div>
                     </div>
@@ -179,24 +179,24 @@
                         <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                             <img src="{{ asset('img/trails/venice-train-depot/train-depot-aerial.jpg') }}"
                                 alt="Venice Legacy Trail" title="The Legacy Trail in Venice, Florida"
-                                class="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover">
+                                class="aspect-7/5 w-148 max-w-none rounded-2xl bg-gray-50 object-cover">
                         </div>
                         <div
-                            class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
+                            class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8">
                             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
                                 <img src="{{ asset('img/trails/venice-train-depot/circus-train-car-museum.jpg') }}"
                                     alt="Legacy Trail Venice, Florida" title="Venice EBike Trail"
-                                    class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
+                                    class="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                                 <img src="{{ asset('img/trails/venice-train-depot/venice-pier.jpg') }}"
                                     alt="Venice Legacy Trail" title="Electric Bike Trail Sarasota"
-                                    class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
+                                    class="aspect-7/5 w-148 max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                                 <img src="{{ asset('img/trails/venice-train-depot/venice-sign.jpg') }}"
                                     alt="Legacy Trail Venice, Florida" title="Sarasota EBike Trails"
-                                    class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
+                                    class="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover">
                             </div>
                         </div>
                     </div>
@@ -268,7 +268,7 @@
                     class="mx-auto mt-16 grid grid-cols-1 gap-x-4 md:gap-x-6 gap-y-4 md:gap-y-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 md:grid-cols-2">
                     @foreach ($trailheads as $trailhead)
                         <article
-                            class="flex flex-col items-start dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow">
+                            class="flex flex-col items-start dark:bg-gray-800 bg-white rounded-lg overflow-hidden shadow-sm">
                             <div class="aspect-video w-full">
                                 <iframe class="w-full h-full"
                                     src="https://www.youtube.com/embed/{{ $trailhead['video_id'] }}?controls=1&playlist={{ $trailhead['video_id'] }}&loop=1"
